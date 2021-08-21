@@ -1,0 +1,190 @@
+---
+title: "Pipeline"
+output: 
+  html_document:
+    theme: simplex
+    toc: true
+    toc_depth: 2
+    toc_float: true
+vignette: >
+  %\VignetteIndexEntry{NPLUG}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 10,
+  fig.height = 10,
+  dpi = 50 # lower the limit so the vignette's file size is not too large
+)
+```
+
+```{r load_packages, message = FALSE, warning = FALSE}
+# install from CRAN
+library(dplyr)
+library(readr)
+library(tidyr)
+library(purrr)
+library(ggplot2)
+library(DT)
+# install from Bioconductor
+library(qvalue)
+# load the midas R package
+library(midas)
+theme_set(theme_bw())
+
+# tmp until the final data is added
+midas_root_rel_path <- "../../MIDAS_private"
+midas_root_path <- find_midas_root_path(midas_root_rel_path)
+```
+
+```{r data_setup}
+raw_data <- read_delim(file.path(midas_root_path, "data/fold_change/20210621_MIDAS_Calico_Input_Iso_collapse.txt"), delim = "\t") %>%
+  rename(protein = Metabolite)
+
+pools <- raw_data %>%
+  slice(1) %>%
+  select(-protein) %>%
+  tidyr::gather(metabolite, pool)
+
+if (!all(pools$pool %in% 1:4)) {
+  stop ("The first row did not contain pool information, please update the input files")
+}
+
+log2_replicated_abundances <- raw_data %>%
+  slice(-1) %>%
+  gather(metabolite, log2_abundance, -protein) %>%
+  # remove missing observations
+  dplyr::filter(!is.na(log2_abundance))
+```
+
+```{r collapsing_replicates}
+log2_replicated_abundances_outlier_filtered <- log2_replicated_abundances %>%
+  group_by(protein, metabolite) %>%
+  # calculate per-metabolite SD
+  mutate(mean_log2_abundance = mean(log2_abundance)) %>%
+  group_by(metabolite) %>%
+  mutate(metabolite_sd = sqrt(mean((log2_abundance - mean_log2_abundance)^2) * 3/2)) %>%
+  ungroup() %>%
+  # filter up to one outlier point per metabolite/protein pair
+  mutate(z_scores = (log2_abundance - mean_log2_abundance)/metabolite_sd) %>%
+  group_by(protein, metabolite) %>%
+  arrange(desc(abs(z_scores))) %>%
+  mutate(disagree_rank = 1:n()) %>%
+  filter(case_when(disagree_rank == 1 & abs(z_scores) > 5 ~ FALSE,
+                   TRUE ~ TRUE)) %>%
+  ungroup()
+
+# collapse replicates
+log2_abundances <- log2_replicated_abundances_outlier_filtered %>%
+  group_by(protein, metabolite) %>%
+  summarize(log2_abundance = mean(log2_abundance)) %>%
+  ungroup()
+```
+
+```{r matrix_viz, fig.height = 15, fig.width = 15}
+pool_data <- log2_abundances %>%
+  # add pool information
+  dplyr::inner_join(pools, by = "metabolite") %>%
+  # separate each pool
+  tidyr::nest(pool_data = -pool) %>%
+  # remove top pcs separately for each pool
+  dplyr::mutate(correct_pool = purrr::map(pool_data, correct_pool)) %>%
+  tidyr::unnest_wider(correct_pool)
+```
+
+```{r scree_plots}
+pool_data %>%
+  dplyr::select(pool, scree_data) %>%
+  tidyr::unnest(scree_data) %>%
+  ggplot(aes(x = PC, y = VarEx)) +
+  geom_point() +
+  facet_wrap(~ pool) +
+  scale_x_continuous("PC #") +
+  scale_y_continuous("% variance explained", label = scales::percent)
+```
+
+```{r svd_fits, fig.height = 15, fig.width = 8}
+matrix_summary_plots(1, pool_data)
+matrix_summary_plots(2, pool_data)
+matrix_summary_plots(3, pool_data)
+matrix_summary_plots(4, pool_data)
+```
+
+
+```{r calculate_enrichments}
+log2_pc_projection_tbl <- pool_data %>%
+  dplyr::select(pool, log2_pc_projection_tbl) %>%
+  tidyr::unnest(log2_pc_projection_tbl) %>%
+  dplyr::select(-pool)
+
+enrichment_statistics <- log2_abundances %>%
+  inner_join(log2_pc_projection_tbl, by = c("protein", "metabolite")) %>%
+  nest(met_data = -metabolite) %>%
+  mutate(met_stats = map(met_data, generate_met_z_scores, sd_method = "central_quantiles", quantile_range = 0.5)) %>%
+  unnest(met_stats) %>%
+  mutate(q_value = qvalue(p_value)$qvalues)
+
+ggplot(enrichment_statistics, aes(x = p_value)) +
+  geom_histogram(bins = 100)
+```
+
+
+```{r results_summary, fig.height = 15, fig.width = 15}
+FDR_cutoff <- 0.1
+
+# summary by protein
+enrichment_statistics %>%
+  mutate(query_protein = factor(query_protein, levels = unique(query_protein))) %>%
+  filter(q_value < FDR_cutoff) %>%
+  mutate(direction = ifelse(log2_abundance_corrected > met_mean, "enriched", "depleted")) %>%
+  count(query_protein, direction) %>%
+  spread(direction, n, fill = 0) %>%
+  datatable()
+
+# overview of all changes
+ggplot(enrichment_statistics,
+       aes(x = log2_abundance,
+           y = log2_abundance_corrected,
+           color = q_value < FDR_cutoff)) +
+  ggrastr::rasterise(geom_point(size = 0.5)) +
+  scale_color_brewer(palette = "Set1")
+
+# spot checking enrichments
+set.seed(1234)
+
+# metabolite levels
+sampled_metabolite_changes <- enrichment_statistics %>%
+  filter(q_value < FDR_cutoff) %>%
+  distinct(metabolite) %>%
+  sample_n(16)
+
+enrichment_statistics %>%
+  semi_join(sampled_metabolite_changes, by = "metabolite") %>%
+  select(metabolite, query_protein, raw = log2_abundance, post_PCA = log2_abundance_corrected, q_value) %>%
+  gather(variable, abundance, raw, post_PCA) %>%
+  ggplot(aes(x = query_protein, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_wrap(~ metabolite, scale = "free_y") +
+  scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
+  theme(axis.text.x = element_text(angle = 90, size = 5, hjust = 1)) +
+  ggtitle("Changes of example metabolites")
+
+sampled_proteins <- enrichment_statistics %>%
+  distinct(query_protein) %>%
+  sample_n(3)
+
+enrichment_statistics %>%
+  semi_join(sampled_proteins, by = "query_protein") %>%
+  select(metabolite, query_protein, raw = log2_abundance, post_PCA = log2_abundance_corrected, q_value) %>%
+  gather(variable, abundance, raw, post_PCA) %>%
+  ggplot(aes(x = metabolite, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_wrap(~ query_protein, scale = "free_y", ncol = 1) +
+  scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
+  theme(axis.text.x = element_text(angle = 90, size = 5, hjust = 1)) +
+  ggtitle("Changes of example proteins")
+```

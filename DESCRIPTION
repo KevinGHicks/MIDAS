@@ -1,0 +1,30 @@
+Package: midas
+Type: Package
+Title: MIDAS
+Version: 0.1.0
+Authors@R: c(
+    person("Sean", "Hackett", email = "sean@calicolabs.com", role = c("aut", "cre")),
+    person("Kevin", "Hicks", email = "kevin.hicks@biochem.utah.edu", role = c("aut", "cre")))
+Author: Sean Hackett
+Maintainer: Sean Hackett <sean@calicolabs.com>
+Description: MIDAS provides functions for identifying and visualizing signals in MIDAS equilibrium dialysis mass spectormetry experiments.
+Depends: R (>= 3.2.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+biocViews:
+Imports: dplyr,
+    glue,
+    ggplot2,
+    purrr,
+    readr,
+    reshape2,
+    rlang,
+    tibble,
+    tidyr (>= 1.0.0)
+Suggests:
+    ggrastr
+Suggests: DT,
+  qvalue
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0
