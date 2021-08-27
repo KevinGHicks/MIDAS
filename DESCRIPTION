@@ -14,17 +14,18 @@ Encoding: UTF-8
 LazyData: true
 biocViews:
 Imports: dplyr,
-    glue,
-    ggplot2,
-    purrr,
-    readr,
-    reshape2,
-    rlang,
-    tibble,
-    tidyr (>= 1.0.0)
-Suggests:
-    ggrastr
+  glue,
+  ggplot2,
+  purrr,
+  readr,
+  reshape2,
+  rlang,
+  tibble,
+  tidyr (>= 1.0.0)
 Suggests: DT,
+  ggrastr,
+  knitr,
+  rmarkdown,
   qvalue
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

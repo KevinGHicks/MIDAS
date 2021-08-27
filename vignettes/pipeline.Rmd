@@ -22,6 +22,10 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Setup
+
+## Load R Packages
+
 ```{r load_packages, message = FALSE, warning = FALSE}
 # install from CRAN
 library(dplyr)
@@ -34,15 +38,22 @@ library(DT)
 library(qvalue)
 # load the midas R package
 library(midas)
-theme_set(theme_bw())
-
-# tmp until the final data is added
-midas_root_rel_path <- "../../MIDAS_private"
-midas_root_path <- find_midas_root_path(midas_root_rel_path)
+theme_set(
+  theme_bw() + theme(
+    axis.text = element_text(size = 14),
+    axis.title = element_text(size = 20),
+    title = element_text(size = 22),
+    legend.title = element_text(size = 20),
+    legend.text = element_text(size = 14)
+    ))
 ```
 
-```{r data_setup}
-raw_data <- read_delim(file.path(midas_root_path, "data/fold_change/20210621_MIDAS_Calico_Input_Iso_collapse.txt"), delim = "\t") %>%
+## Read and format MIDAS input data
+
+```{r data_setup, message = FALSE}
+midas_input_data_path <- system.file("extdata", "MIDAS_input_dataset.txt", package = "midas")
+
+raw_data <- read_delim(midas_input_data_path, delim = "\t") %>%
   rename(protein = Metabolite)
 
 pools <- raw_data %>%
@@ -59,7 +70,13 @@ log2_replicated_abundances <- raw_data %>%
   gather(metabolite, log2_abundance, -protein) %>%
   # remove missing observations
   dplyr::filter(!is.na(log2_abundance))
+
+util_pretty_khead(log2_replicated_abundances, nrows = 5, caption = "Example log2 fold-changes (protein bound - protein free)")
 ```
+
+# Normalization
+
+## Filter Outliers Then Collapse Technical Replicates
 
 ```{r collapsing_replicates}
 log2_replicated_abundances_outlier_filtered <- log2_replicated_abundances %>%
@@ -78,14 +95,23 @@ log2_replicated_abundances_outlier_filtered <- log2_replicated_abundances %>%
                    TRUE ~ TRUE)) %>%
   ungroup()
 
-# collapse replicates
+n_filtered <- (nrow(log2_replicated_abundances) - nrow(log2_replicated_abundances_outlier_filtered))
+
+print(glue::glue(
+  "{n_filtered} observations filtered
+  {round(n_filtered/nrow(log2_replicated_abundances)*100,3)}% of observations"
+))
+
+# collapse replicates by mean of replicate fold-changes
 log2_abundances <- log2_replicated_abundances_outlier_filtered %>%
   group_by(protein, metabolite) %>%
   summarize(log2_abundance = mean(log2_abundance)) %>%
   ungroup()
 ```
 
-```{r matrix_viz, fig.height = 15, fig.width = 15}
+## Correct For Non-Specific Binding
+
+```{r estimate_shared_noise}
 pool_data <- log2_abundances %>%
   # add pool information
   dplyr::inner_join(pools, by = "metabolite") %>%
@@ -96,9 +122,12 @@ pool_data <- log2_abundances %>%
   tidyr::unnest_wider(correct_pool)
 ```
 
-```{r scree_plots}
+## Create PCA Scree Plots
+
+```{r scree_plots, fig.height = 8, fig.width = 8}
 pool_data %>%
   dplyr::select(pool, scree_data) %>%
+  dplyr::mutate(pool = glue::glue("pool {pool}")) %>%
   tidyr::unnest(scree_data) %>%
   ggplot(aes(x = PC, y = VarEx)) +
   geom_point() +
@@ -107,6 +136,10 @@ pool_data %>%
   scale_y_continuous("% variance explained", label = scales::percent)
 ```
 
+## Visualize PCA Projections and Post-PCA Corrected Data
+
+Note: each plot is separately hierarchically clustered so ordering of metabolites and samples will change.
+
 ```{r svd_fits, fig.height = 15, fig.width = 8}
 matrix_summary_plots(1, pool_data)
 matrix_summary_plots(2, pool_data)
@@ -114,8 +147,12 @@ matrix_summary_plots(3, pool_data)
 matrix_summary_plots(4, pool_data)
 ```
 
+# Statistical Analysis
 
-```{r calculate_enrichments}
+## Infer Metabolite-Protein Interactions (MPIs) from Corrected Fold-Changes
+
+```{r calculate_enrichments, fig.height = 8, fig.width = 8}
+# create a table of PCA-correct fold-changes
 log2_pc_projection_tbl <- pool_data %>%
   dplyr::select(pool, log2_pc_projection_tbl) %>%
   tidyr::unnest(log2_pc_projection_tbl) %>%
@@ -124,16 +161,26 @@ log2_pc_projection_tbl <- pool_data %>%
 enrichment_statistics <- log2_abundances %>%
   inner_join(log2_pc_projection_tbl, by = c("protein", "metabolite")) %>%
   nest(met_data = -metabolite) %>%
-  mutate(met_stats = map(met_data, generate_met_z_scores, sd_method = "central_quantiles", quantile_range = 0.5)) %>%
+  # fit z-scores for enrichments using an estimate of SD from central
+  # quantiles (75%-25%) of fold-changes for a given metabolite
+  mutate(met_stats = map(
+    met_data,
+    generate_met_z_scores,
+    sd_method = "central_quantiles",
+    quantile_range = 0.5
+    )) %>%
   unnest(met_stats) %>%
+  # calculate q-values from z-score p-values
   mutate(q_value = qvalue(p_value)$qvalues)
 
 ggplot(enrichment_statistics, aes(x = p_value)) +
-  geom_histogram(bins = 100)
+  geom_histogram(breaks = seq(0,1,by=0.02)) +
+  ggtitle("P-value distributions for all tested MPIs")
 ```
 
+## Summarize FDR-controlled MPIs
 
-```{r results_summary, fig.height = 15, fig.width = 15}
+```{r results_summary}
 FDR_cutoff <- 0.1
 
 # summary by protein
@@ -144,15 +191,21 @@ enrichment_statistics %>%
   count(query_protein, direction) %>%
   spread(direction, n, fill = 0) %>%
   datatable()
+```
 
-# overview of all changes
+```{r scatter_plot, fig.height = 10, fig.width = 10}
 ggplot(enrichment_statistics,
        aes(x = log2_abundance,
            y = log2_abundance_corrected,
            color = q_value < FDR_cutoff)) +
   ggrastr::rasterise(geom_point(size = 0.5)) +
-  scale_color_brewer(palette = "Set1")
+  scale_color_brewer(palette = "Set1") +
+  scale_x_continuous("Raw fold-changes") +
+  scale_y_continuous("PCA-corrected fold-changes") +
+  ggtitle("Overview of All Changes")
+```
 
+```{r example_metabolite_dist, fig.height = 10, fig.width = 10}
 # spot checking enrichments
 set.seed(1234)
 
@@ -170,9 +223,11 @@ enrichment_statistics %>%
   geom_bar(stat = "identity", position = "dodge") +
   facet_wrap(~ metabolite, scale = "free_y") +
   scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
-  theme(axis.text.x = element_text(angle = 90, size = 5, hjust = 1)) +
+  theme(axis.text.x = element_blank()) +
   ggtitle("Changes of example metabolites")
+```
 
+```{r example_protein_dist, fig.height = 10, fig.width = 10}
 sampled_proteins <- enrichment_statistics %>%
   distinct(query_protein) %>%
   sample_n(3)
@@ -185,6 +240,19 @@ enrichment_statistics %>%
   geom_bar(stat = "identity", position = "dodge") +
   facet_wrap(~ query_protein, scale = "free_y", ncol = 1) +
   scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
-  theme(axis.text.x = element_text(angle = 90, size = 5, hjust = 1)) +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), panel.grid.major.x = element_blank()) +
   ggtitle("Changes of example proteins")
+```
+
+## Save Results
+
+```{r save_results}
+midas_mpis = enrichment_statistics %>%
+  dplyr::select(-met_data, -met_mean, -met_sd)
+
+# save to packages with:
+# this data can be accessed with data(midas_mpis)
+# usethis::use_data(midas_mpis, overwrite = TRUE)
+
+util_pretty_khead(midas_mpis %>% filter(q_value < 0.1), nrows = 5, caption = "Example significant MPIs")
 ```

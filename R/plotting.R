@@ -50,14 +50,14 @@ matrix_summary_plots <- function (which_pool, pool_data) {
 
 #' MIDAS Barplot
 #'
-#' @param midas_data \code{\link{fold_changes}}, \code{\link{total_abundances}} with any filters applied
+#' @param midas_data \code{\link{midas_mpis}} with any filters applied
 #' @param facet_by Variable to facet by, either protein or metabolite
 #' @param FDR_cutoff cutoff used for labelling discoveries
 #'
 #' @return a grob
 #'
 #' @examples
-#' midas_barplot(dplyr::filter(fold_changes, query_protein %in% c("ACC", "AASSA-c213"), q_value < 0.1))
+#' midas_barplot(dplyr::filter(midas_mpis, query_protein %in% c("ACC", "AASSA-c213"), q_value < 0.1))
 #'
 #' @export
 midas_barplot <- function (midas_data, facet_by = "protein", FDR_cutoff = 0.1) {
