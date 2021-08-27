@@ -7,7 +7,25 @@
 #'
 #' @importFrom dplyr %>%
 #' @import ggplot2
-NULL
+utils::globalVariables(c(
+  ".",
+  "abundance",
+  "background_protein",
+  "log2_abundance",
+  "log2_abundance_corrected",
+  "log2_threshold",
+  "met_mean",
+  "met_sd",
+  "metabolite",
+  "pool",
+  "post_PCA",
+  "protein",
+  "q_value",
+  "query_protein",
+  "variable",
+  "x",
+  "y"
+))
 
 #' MIDAS MPIs
 #'

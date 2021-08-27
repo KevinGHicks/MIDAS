@@ -9,7 +9,7 @@ correct_pool(pool_data, npcs = 3)
 \arguments{
 \item{pool_data}{tibble containing protein, metabolite, and log2_abundance}
 
-\item{number}{of principal components to subtract}
+\item{npcs}{number of principal components to subtract}
 }
 \value{
 a list containing:

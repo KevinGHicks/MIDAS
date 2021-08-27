@@ -59,7 +59,7 @@ raw_data <- read_delim(midas_input_data_path, delim = "\t") %>%
 pools <- raw_data %>%
   slice(1) %>%
   select(-protein) %>%
-  tidyr::gather(metabolite, pool)
+  gather(metabolite, pool)
 
 if (!all(pools$pool %in% 1:4)) {
   stop ("The first row did not contain pool information, please update the input files")
@@ -69,7 +69,7 @@ log2_replicated_abundances <- raw_data %>%
   slice(-1) %>%
   gather(metabolite, log2_abundance, -protein) %>%
   # remove missing observations
-  dplyr::filter(!is.na(log2_abundance))
+  filter(!is.na(log2_abundance))
 
 util_pretty_khead(log2_replicated_abundances, nrows = 5, caption = "Example log2 fold-changes (protein bound - protein free)")
 ```
@@ -114,21 +114,21 @@ log2_abundances <- log2_replicated_abundances_outlier_filtered %>%
 ```{r estimate_shared_noise}
 pool_data <- log2_abundances %>%
   # add pool information
-  dplyr::inner_join(pools, by = "metabolite") %>%
+  inner_join(pools, by = "metabolite") %>%
   # separate each pool
-  tidyr::nest(pool_data = -pool) %>%
+  nest(pool_data = -pool) %>%
   # remove top pcs separately for each pool
-  dplyr::mutate(correct_pool = purrr::map(pool_data, correct_pool)) %>%
-  tidyr::unnest_wider(correct_pool)
+  mutate(correct_pool = map(pool_data, correct_pool)) %>%
+  unnest_wider(correct_pool)
 ```
 
 ## Create PCA Scree Plots
 
 ```{r scree_plots, fig.height = 8, fig.width = 8}
 pool_data %>%
-  dplyr::select(pool, scree_data) %>%
-  dplyr::mutate(pool = glue::glue("pool {pool}")) %>%
-  tidyr::unnest(scree_data) %>%
+  select(pool, scree_data) %>%
+  mutate(pool = glue::glue("pool {pool}")) %>%
+  unnest(scree_data) %>%
   ggplot(aes(x = PC, y = VarEx)) +
   geom_point() +
   facet_wrap(~ pool) +
@@ -154,9 +154,9 @@ matrix_summary_plots(4, pool_data)
 ```{r calculate_enrichments, fig.height = 8, fig.width = 8}
 # create a table of PCA-correct fold-changes
 log2_pc_projection_tbl <- pool_data %>%
-  dplyr::select(pool, log2_pc_projection_tbl) %>%
-  tidyr::unnest(log2_pc_projection_tbl) %>%
-  dplyr::select(-pool)
+  select(pool, log2_pc_projection_tbl) %>%
+  unnest(log2_pc_projection_tbl) %>%
+  select(-pool)
 
 enrichment_statistics <- log2_abundances %>%
   inner_join(log2_pc_projection_tbl, by = c("protein", "metabolite")) %>%
@@ -221,7 +221,7 @@ enrichment_statistics %>%
   gather(variable, abundance, raw, post_PCA) %>%
   ggplot(aes(x = query_protein, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
   geom_bar(stat = "identity", position = "dodge") +
-  facet_wrap(~ metabolite, scale = "free_y") +
+  facet_wrap(~ metabolite, scales = "free_y") +
   scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
   theme(axis.text.x = element_blank()) +
   ggtitle("Changes of example metabolites")
@@ -238,7 +238,7 @@ enrichment_statistics %>%
   gather(variable, abundance, raw, post_PCA) %>%
   ggplot(aes(x = metabolite, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
   geom_bar(stat = "identity", position = "dodge") +
-  facet_wrap(~ query_protein, scale = "free_y", ncol = 1) +
+  facet_wrap(~ query_protein, scales = "free_y", ncol = 1) +
   scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), panel.grid.major.x = element_blank()) +
   ggtitle("Changes of example proteins")
@@ -248,7 +248,7 @@ enrichment_statistics %>%
 
 ```{r save_results}
 midas_mpis = enrichment_statistics %>%
-  dplyr::select(-met_data, -met_mean, -met_sd)
+  select(-met_data, -met_mean, -met_sd)
 
 # save to packages with:
 # this data can be accessed with data(midas_mpis)

@@ -7,7 +7,7 @@
 heatmap_plot(dat)
 }
 \arguments{
-\item{dat}{A matrix of abuundances}
+\item{dat}{A matrix of abundances}
 }
 \value{
 a grob

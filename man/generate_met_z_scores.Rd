@@ -7,11 +7,15 @@
 generate_met_z_scores(met_data, sd_method = "holdout", quantile_range = 0.5)
 }
 \arguments{
-\item{met_data}{a tibble containing metabolite, protein and log2_abundance_corrected}
+\item{met_data}{a tibble containing metabolite, protein and
+log2_abundance_corrected}
 
 \item{sd_method}{method to use when estimating standard deviation:
 \describe{
- \item{holdout}{For a given value, calculate SD by removing that value and calculating SD over all other measurements of that metabolite. Conservative when there are many enrichments or depletions of a given metabolite.}
+ \item{holdout}{For a given value, calculate SD by removing that value and
+   calculating SD over all other measurements of that metabolite.
+   Conservative when there are many enrichments or depletions of a given
+   metabolite.}
  \item{central_quantiles}{Estimate SD from the central quantiles of the
  relative abundance distribution. For intuition, 66 \% of Normally-distribute
  observations are expected to fall within 1 SD of the mean. So, the range of
@@ -19,11 +23,13 @@ generate_met_z_scores(met_data, sd_method = "holdout", quantile_range = 0.5)
  standard deviation.}
  }}
 
-\item{quantile_range}{For \code{central_quantiles}, fraction of relative abundance distribution to use when estimating SD.}
+\item{quantile_range}{For \code{central_quantiles}, fraction of relative
+abundance distribution to use when estimating SD.}
 }
 \value{
 met_data containing estimates of the SD of an observation and p-values.
 }
 \description{
-Estimate the mean, and SD of abundances changes and resulting statistical significance based on a Wald test.
+Estimate the mean, and SD of abundances changes and resulting statistical
+  significance based on a Wald test.
 }

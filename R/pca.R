@@ -3,7 +3,7 @@
 #' Subtracts the top principal components from a matrix of proteins x metabolites
 #'
 #' @param pool_data tibble containing protein, metabolite, and log2_abundance
-#' @param number of principal components to subtract
+#' @param npcs number of principal components to subtract
 #'
 #' @return a list containing:
 #' \describe{
@@ -30,26 +30,31 @@ correct_pool <- function (pool_data, npcs = 3) {
 
   pool_svd <- svd(pool_log2_matrix)
 
-  scree_data <- tibble::tibble(PC = seq_along(pool_svd$d),
-                               VarEx = pool_svd$d^2 / sum(pool_svd$d^2))
+  scree_data <- tibble::tibble(
+    PC = seq_along(pool_svd$d),
+    VarEx = pool_svd$d^2 / sum(pool_svd$d^2)
+    )
 
-  top_pc_fit <- pool_svd$u[,1:npcs,drop = FALSE] %*% diag(x = pool_svd$d[1:npcs], nrow = npcs, ncol = npcs) %*% t(pool_svd$v[,1:npcs,drop = FALSE])
+  top_pc_fit <- pool_svd$u[,1:npcs,drop = FALSE] %*%
+    diag(x = pool_svd$d[1:npcs], nrow = npcs, ncol = npcs) %*%
+    t(pool_svd$v[,1:npcs,drop = FALSE])
   rownames(top_pc_fit) <- rownames(pool_log2_matrix)
   colnames(top_pc_fit) <- colnames(pool_log2_matrix)
-
 
   log2_pc_projection <- pool_log2_matrix - top_pc_fit
 
   log2_pc_projection_tbl <- log2_pc_projection %>%
     as.data.frame(stringsAsFactors = FALSE) %>%
-    mutate(protein = rownames(.)) %>%
-    gather(metabolite, log2_abundance_corrected, -protein)
+    dplyr::mutate(protein = rownames(.)) %>%
+    tidyr::gather(metabolite, log2_abundance_corrected, -protein)
 
-  output = list(pool_log2_matrix = pool_log2_matrix,
-                scree_data = scree_data,
-                top_pc_fit = top_pc_fit,
-                log2_pc_projection = log2_pc_projection,
-                log2_pc_projection_tbl = matrix_to_tibble(log2_pc_projection))
+  output = list(
+    pool_log2_matrix = pool_log2_matrix,
+    scree_data = scree_data,
+    top_pc_fit = top_pc_fit,
+    log2_pc_projection = log2_pc_projection,
+    log2_pc_projection_tbl = matrix_to_tibble(log2_pc_projection)
+    )
 
   return (output)
 }
@@ -57,6 +62,6 @@ correct_pool <- function (pool_data, npcs = 3) {
 matrix_to_tibble <- function (dat) {
   dat %>%
     as.data.frame(stringsAsFactors = FALSE) %>%
-    mutate(protein = rownames(.)) %>%
-    gather(metabolite, log2_abundance_corrected, -protein)
+    dplyr::mutate(protein = rownames(.)) %>%
+    tidyr::gather(metabolite, log2_abundance_corrected, -protein)
 }

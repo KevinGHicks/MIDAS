@@ -11,7 +11,7 @@ midas_barplot(midas_data, facet_by = "protein", FDR_cutoff = 0.1)
 
 \item{facet_by}{Variable to facet by, either protein or metabolite}
 
-\item{FDR_cutoff}{cutoff used for labelling discoveries}
+\item{FDR_cutoff}{cutoff used for labeling discoveries}
 }
 \value{
 a grob
@@ -20,6 +20,14 @@ a grob
 MIDAS Barplot
 }
 \examples{
-midas_barplot(dplyr::filter(midas_mpis, query_protein \%in\% c("ACC", "AASSA-c213"), q_value < 0.1))
+
+library(dplyr)
+library(ggplot2)
+
+midas_mpis \%>\%
+  dplyr::filter(query_protein \%in\%
+    sample(unique(midas_mpis$query_protein), 3)) \%>\%
+  midas_barplot(FDR_cutoff = 0.1) +
+  theme(axis.text.x = element_blank())
 
 }

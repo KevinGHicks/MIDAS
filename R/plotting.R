@@ -2,15 +2,15 @@
 #'
 #' Creates a heatmap with hierarchically clusters rows and columns.
 #'
-#' @param dat A matrix of abuundances
+#' @param dat A matrix of abundances
 #'
 #' @return a grob
 #'
 #' @export
 heatmap_plot <- function (dat) {
 
-  cluster_rows <- rownames(dat)[hclust(dist(dat), method = "ward.D2")$order]
-  cluster_cols <- colnames(dat)[hclust(dist(t(dat)), method = "ward.D2")$order]
+  cluster_rows <- rownames(dat)[stats::hclust(stats::dist(dat), method = "ward.D2")$order]
+  cluster_cols <- colnames(dat)[stats::hclust(stats::dist(t(dat)), method = "ward.D2")$order]
 
   matrix_to_tibble(dat) %>%
     dplyr::mutate(protein = factor(protein, levels = cluster_rows),
@@ -52,12 +52,20 @@ matrix_summary_plots <- function (which_pool, pool_data) {
 #'
 #' @param midas_data \code{\link{midas_mpis}} with any filters applied
 #' @param facet_by Variable to facet by, either protein or metabolite
-#' @param FDR_cutoff cutoff used for labelling discoveries
+#' @param FDR_cutoff cutoff used for labeling discoveries
 #'
 #' @return a grob
 #'
 #' @examples
-#' midas_barplot(dplyr::filter(midas_mpis, query_protein %in% c("ACC", "AASSA-c213"), q_value < 0.1))
+#'
+#' library(dplyr)
+#' library(ggplot2)
+#'
+#' midas_mpis %>%
+#'   dplyr::filter(query_protein %in%
+#'     sample(unique(midas_mpis$query_protein), 3)) %>%
+#'   midas_barplot(FDR_cutoff = 0.1) +
+#'   theme(axis.text.x = element_blank())
 #'
 #' @export
 midas_barplot <- function (midas_data, facet_by = "protein", FDR_cutoff = 0.1) {
@@ -72,7 +80,7 @@ midas_barplot <- function (midas_data, facet_by = "protein", FDR_cutoff = 0.1) {
                          dplyr::mutate(metabolite = stringr::str_wrap(metabolite, width = 30, indent = 2)) %>%
                          ggplot(aes(x = metabolite, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
                          geom_bar(stat = "identity", position = "dodge") +
-                         facet_wrap(~ query_protein, scale = "free", ncol = 1) +
+                         facet_wrap(~ query_protein, scales = "free", ncol = 1) +
                          scale_fill_brewer("Measurement", palette = "Set2") +
                          scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
                          theme_bw() +
@@ -85,7 +93,7 @@ midas_barplot <- function (midas_data, facet_by = "protein", FDR_cutoff = 0.1) {
                          dplyr::mutate(query_protein = stringr::str_wrap(query_protein, width = 30, indent = 2)) %>%
                          ggplot(aes(x = query_protein, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
                          geom_bar(stat = "identity", position = "dodge") +
-                         facet_wrap(~ metabolite, scale = "free", ncol = 1) +
+                         facet_wrap(~ metabolite, scales = "free", ncol = 1) +
                          scale_fill_brewer("Measurement", palette = "Set2") +
                          scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
                          theme_bw() +
