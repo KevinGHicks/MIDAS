@@ -36,7 +36,7 @@ utils::globalVariables(c(
 #'   \item{metabolite}{Metabolite name (indistinguishable metabolites are lumped)}
 #'   \item{query_protein}{Protein name. Anonymous proteins are named MIDASXXXX.}
 #'   \item{log2_abundance}{Raw fold-changes between protein-present and protein-absent compartments}
-#'   \item{log2_abundance_corrected}{Fold-changes corrected for non-specific MPIs using PCA}
+#'   \item{log2_abundance_corrected}{Fold-changes corrected for non-specific binding using PCA}
 #'   \item{p_value}{P-value for enrichment/depletion}
 #'   \item{q_value}{P-values corrected for multiple hypotheses using PMID: 12883005 }
 #' }

@@ -257,5 +257,5 @@ midas_pmis = enrichment_statistics %>%
 # this data can be accessed with data(midas_pmis)
 # usethis::use_data(midas_pmis, overwrite = TRUE)
 
-util_pretty_khead(midas_pmis %>% filter(q_value < 0.1), nrows = 5, caption = "Example significant MPIs")
+util_pretty_khead(midas_pmis %>% filter(q_value < 0.1), nrows = 5, caption = "Example significant PMIs")
 ```
