@@ -50,7 +50,7 @@ matrix_summary_plots <- function (which_pool, pool_data) {
 
 #' MIDAS Barplot
 #'
-#' @param midas_data \code{\link{midas_mpis}} with any filters applied
+#' @param midas_data \code{\link{midas_pmis}} with any filters applied
 #' @param facet_by Variable to facet by, either protein or metabolite
 #' @param FDR_cutoff cutoff used for labeling discoveries
 #'
@@ -61,9 +61,9 @@ matrix_summary_plots <- function (which_pool, pool_data) {
 #' library(dplyr)
 #' library(ggplot2)
 #'
-#' midas_mpis %>%
+#' midas_pmis %>%
 #'   dplyr::filter(query_protein %in%
-#'     sample(unique(midas_mpis$query_protein), 3)) %>%
+#'     sample(unique(midas_pmis$query_protein), 3)) %>%
 #'   midas_barplot(FDR_cutoff = 0.1) +
 #'   theme(axis.text.x = element_blank())
 #'

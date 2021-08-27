@@ -7,7 +7,7 @@
 midas_barplot(midas_data, facet_by = "protein", FDR_cutoff = 0.1)
 }
 \arguments{
-\item{midas_data}{\code{\link{midas_mpis}} with any filters applied}
+\item{midas_data}{\code{\link{midas_pmis}} with any filters applied}
 
 \item{facet_by}{Variable to facet by, either protein or metabolite}
 
@@ -24,9 +24,9 @@ MIDAS Barplot
 library(dplyr)
 library(ggplot2)
 
-midas_mpis \%>\%
+midas_pmis \%>\%
   dplyr::filter(query_protein \%in\%
-    sample(unique(midas_mpis$query_protein), 3)) \%>\%
+    sample(unique(midas_pmis$query_protein), 3)) \%>\%
   midas_barplot(FDR_cutoff = 0.1) +
   theme(axis.text.x = element_blank())
 

@@ -27,9 +27,9 @@ utils::globalVariables(c(
   "y"
 ))
 
-#' MIDAS MPIs
+#' MIDAS PMIs
 #'
-#' MIDAS Metabolite-Protein Interactions produced by running the vignette, pipeline.Rmd.
+#' MIDAS Protein-Metabolite Interactions (PMIs) produced by running the vignette, pipeline.Rmd.
 #'
 #' @format A tibble with 52,614 rows and 8 columns:
 #' \describe{
@@ -40,4 +40,4 @@ utils::globalVariables(c(
 #'   \item{p_value}{P-value for enrichment/depletion}
 #'   \item{q_value}{P-values corrected for multiple hypotheses using PMID: 12883005 }
 #' }
-"midas_mpis"
+"midas_pmis"

@@ -150,7 +150,7 @@ matrix_summary_plots(4, pool_data)
 
 # Statistical Analysis
 
-## Infer Metabolite-Protein Interactions (MPIs) from Corrected Fold-Changes
+## Infer Protein-Metabolite Interactions (PMIs) from Corrected Fold-Changes
 
 ```{r calculate_enrichments, fig.height = 8, fig.width = 8}
 # create a table of PCA-correct fold-changes
@@ -176,10 +176,10 @@ enrichment_statistics <- log2_abundances %>%
 
 ggplot(enrichment_statistics, aes(x = p_value)) +
   geom_histogram(breaks = seq(0,1,by=0.02)) +
-  ggtitle("P-value distributions for all tested MPIs")
+  ggtitle("P-value distributions for all tested PMIs")
 ```
 
-## Summarize FDR-controlled MPIs
+## Summarize FDR-controlled PMIs
 
 ```{r results_summary}
 FDR_cutoff <- 0.1
@@ -250,12 +250,12 @@ enrichment_statistics %>%
 ## Save Results
 
 ```{r save_results}
-midas_mpis = enrichment_statistics %>%
+midas_pmis = enrichment_statistics %>%
   select(-met_data, -met_mean, -met_sd)
 
 # save to packages with:
-# this data can be accessed with data(midas_mpis)
-# usethis::use_data(midas_mpis, overwrite = TRUE)
+# this data can be accessed with data(midas_pmis)
+# usethis::use_data(midas_pmis, overwrite = TRUE)
 
-util_pretty_khead(midas_mpis %>% filter(q_value < 0.1), nrows = 5, caption = "Example significant MPIs")
+util_pretty_khead(midas_pmis %>% filter(q_value < 0.1), nrows = 5, caption = "Example significant MPIs")
 ```
