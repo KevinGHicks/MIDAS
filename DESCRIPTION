@@ -36,7 +36,6 @@ Imports: checkmate,
   tibble,
   tidyr (>= 1.0.0)
 Suggests: DT,
-  ggrastr,
   gridExtra,
   kableExtra,
   knitr,

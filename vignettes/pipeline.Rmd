@@ -43,6 +43,7 @@ theme_set(
     axis.text = element_text(size = 14),
     axis.title = element_text(size = 20),
     title = element_text(size = 22),
+    strip.text = element_text(size = 20),
     legend.title = element_text(size = 20),
     legend.text = element_text(size = 14)
     ))
@@ -193,19 +194,21 @@ enrichment_statistics %>%
   datatable()
 ```
 
-```{r scatter_plot, fig.height = 10, fig.width = 10}
-ggplot(enrichment_statistics,
-       aes(x = log2_abundance,
-           y = log2_abundance_corrected,
-           color = q_value < FDR_cutoff)) +
-  ggrastr::rasterise(geom_point(size = 0.5)) +
-  scale_color_brewer(palette = "Set1") +
+```{r scatter_plot, fig.height = 16, fig.width = 12}
+enrichment_statistics %>%
+  mutate(q_label = ifelse(q_value < 0.1, "q-value < 0.1", "q-value > 0.1")) %>%
+  select(query_protein, metabolite, log2_abundance, log2_abundance_corrected, q_label) %>%
+  ggplot(aes(x = log2_abundance, y = log2_abundance_corrected)) +
+  geom_hex(bins = 60) +
+  facet_wrap(~ q_label, ncol = 1) +
+  scale_fill_viridis_c(trans = "log2", option = "plasma") +
+  coord_equal()+
   scale_x_continuous("Raw fold-changes") +
   scale_y_continuous("PCA-corrected fold-changes") +
   ggtitle("Overview of All Changes")
 ```
 
-```{r example_metabolite_dist, fig.height = 10, fig.width = 10}
+```{r example_metabolite_dist, fig.height = 10, fig.width = 12}
 # spot checking enrichments
 set.seed(1234)
 
@@ -213,7 +216,7 @@ set.seed(1234)
 sampled_metabolite_changes <- enrichment_statistics %>%
   filter(q_value < FDR_cutoff) %>%
   distinct(metabolite) %>%
-  sample_n(16)
+  sample_n(8)
 
 enrichment_statistics %>%
   semi_join(sampled_metabolite_changes, by = "metabolite") %>%
@@ -221,7 +224,7 @@ enrichment_statistics %>%
   gather(variable, abundance, raw, post_PCA) %>%
   ggplot(aes(x = query_protein, y = abundance, fill = variable, alpha = q_value < FDR_cutoff)) +
   geom_bar(stat = "identity", position = "dodge") +
-  facet_wrap(~ metabolite, scales = "free_y") +
+  facet_wrap(~ metabolite, scales = "free_y", ncol = 2) +
   scale_alpha_manual("Is discovery?", values = c("TRUE" = 1, "FALSE" = 0.5)) +
   theme(axis.text.x = element_blank()) +
   ggtitle("Changes of example metabolites")
