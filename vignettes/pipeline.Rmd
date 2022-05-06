@@ -57,7 +57,13 @@ midas_input_data_path <- system.file("extdata", "MIDAS_input_dataset.txt", packa
 raw_data <- read_delim(midas_input_data_path, delim = "\t") %>%
   rename(protein = Metabolite)
 
-pools <- raw_data %>%
+proteins <- raw_data %>%
+  dplyr::select(Protein_name:protein)
+
+measurements <- raw_data %>%
+  dplyr::select(-c(Protein_name:Species))
+
+pools <- measurements %>%
   slice(1) %>%
   select(-protein) %>%
   gather(metabolite, pool)
@@ -66,7 +72,7 @@ if (!all(pools$pool %in% 1:4)) {
   stop ("The first row did not contain pool information, please update the input files")
 }
 
-log2_replicated_abundances <- raw_data %>%
+log2_replicated_abundances <- measurements %>%
   slice(-1) %>%
   gather(metabolite, log2_abundance, -protein) %>%
   # remove missing observations
