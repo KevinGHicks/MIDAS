@@ -97,7 +97,7 @@ UDP-Glucuronate	CNC_93	2	C00167	HMDB00935	O[C@@H]1[C@@H](COP(O)(=O)OP(O)(=O)O[C@
 Cytidine 5-diphosphocholine	CNC_152	4	C00307	HMDB01413	C[N+](C)(C)CCOP([O-])(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(N)=NC1=O	Glycerophospholipid metabolism;Choline metabolism in cancer
 "D-Fructose 1,6-bisphosphate"	20C_7	4	C05378	HMDB60444	O[C@H]1[C@H](O)[C@@](O)(COP(O)(O)=O)O[C@@H]1COP(O)(O)=O	Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Fructose and mannose metabolism;Carbon metabolism;Biosynthesis of amino acids
 "D-Glucose 1,6-bisphosphate"	CNC_66	4	C01231	HMDB03514	O[C@H]1[C@H](O)[C@@H](COP(O)(O)=O)O[C@H](OP(O)(O)=O)[C@@H]1O	Starch and sucrose metabolism
-D-galactaric acid	CNC_145	3	C00879	HMDB00639	O[C@@H]([C@@H](O)[C@H](O)C(O)=O)[C@@H](O)C(O)=O	Ascorbate and aldarate metabolism
+D-Galactaric acid	CNC_145	3	C00879	HMDB00639	O[C@@H]([C@@H](O)[C@H](O)C(O)=O)[C@@H](O)C(O)=O	Ascorbate and aldarate metabolism
 D-Sorbitol	S_2	2	C00794	HMDB00247	OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO	Fructose and mannose metabolism;Galactose metabolism;ABC transporters
 Uridine	U_5	2	C00299	HMDB00296	OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;ABC transporters
 L-Arginine	A_15	3	C00062	HMDB00517	N[C@@H](CCCN=C(N)N)C(O)=O	Arginine biosynthesis;Arginine and proline metabolism;D-Arginine and D-ornithine metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;mTOR signaling pathway;Protein digestion and absorption;Amyotrophic lateral sclerosis (ALS);Chagas disease (American trypanosomiasis);Amoebiasis;Central carbon metabolism in cancer
