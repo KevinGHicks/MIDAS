@@ -1,0 +1,401 @@
+Metabolite	MIDAS_ID	Pool	KEGG_ID	HMDB_ID	SMILES	KEGG_pathway_association
+Glycolic acid	G_15	3	C00160	HMDB00115	OCC(O)=O	Glyoxylate and dicarboxylate metabolism;Carbon metabolism
+S-(5-Adenosyl)-L-methionine	CNC_21_R	2	C00019	HMDB01185	C[S+](CC[C@H](N)C(O)=O)C[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC2=C(N)N=CN=C12	Cysteine and methionine metabolism;Arginine and proline metabolism;Biosynthesis of amino acids;Sulfur relay system
+DL-5-Hydroxylysine	H_3	3	C16741	HMDB00450	NC[C@H](O)CC[C@H](N)C(O)=O	Lysine degradation
+Glyoxylate	20C_15	3	C00048	HMDB00119	OC(=O)C=O	"Purine metabolism;Caffeine metabolism;Glycine, serine and threonine metabolism;Arginine and proline metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism"
+Oxaloacetic acid	20C_1	3	C00036	HMDB00223	OC(=O)CC(=O)C(O)=O	"Glycolysis / Gluconeogenesis;Citrate cycle (TCA cycle);Alanine, aspartate and glutamate metabolism;Pyruvate metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Glucagon signaling pathway;Proximal tubule bicarbonate reclamation;Central carbon metabolism in cancer"
+NADPH	CNC_192	4	C00005	HMDB00221	NC(=O)C1=CN(C=CC1)[C@H]1O[C@@H](COP(O)(=O)OP(O)(=O)OC[C@@H]2O[C@@H]([C@@H](OP(O)(O)=O)[C@H]2O)N2C=NC3=C(N)N=CN=C23)[C@H](O)[C@@H]1O	Glutathione metabolism;Thyroid hormone synthesis;Aldosterone synthesis and secretion
+3-Hydroxypropionic acid	4C_11	3	C01013	HMDB00700	OCCC(O)=O	Pyrimidine metabolism;beta-Alanine metabolism;Propanoate metabolism;Carbon metabolism
+L-Lactic acid	4C_3	3	C00186	HMDB00190	C[C@H](O)C(O)=O	Glycolysis / Gluconeogenesis;Fructose and mannose metabolism;Pyruvate metabolism;Propanoate metabolism;cAMP signaling pathway;HIF-1 signaling pathway;Glucagon signaling pathway;Central carbon metabolism in cancer
+D-Glyceraldehyde	4C_5	3	C00577	HMDB01051	OCC(O)C=O	Pentose phosphate pathway;Fructose and mannose metabolism;Galactose metabolism;Glycerolipid metabolism;Carbon metabolism
+D-Glucose 1-phosphate	20C_3	4	C00103	HMDB01586	OC[C@H]1OC(OP(O)(O)=O)[C@H](O)[C@@H](O)[C@@H]1O	Glycolysis / Gluconeogenesis;Pentose and glucuronate interconversions;Galactose metabolism;Starch and sucrose metabolism;Amino sugar and nucleotide sugar metabolism;Glycerolipid metabolism;Glucagon signaling pathway
+D-Glucose 6-phosphate	20C_5	4	C00668	HMDB01401	OC1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H](O)[C@H]1O	Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Galactose metabolism;Amino sugar and nucleotide sugar metabolism;Carbon metabolism;AMPK signaling pathway;Glucagon signaling pathway
+D-Mannose 6-phosphate	20C_64	4	C00275	HMDB01078	O[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H](O)[C@@H]1O	Fructose and mannose metabolism;Amino sugar and nucleotide sugar metabolism;Lysosome
+D-Galactose 1-phosphate	20C_66	4	 C00446	HMDB00645	OC[C@H]1O[C@H](OP(O)(O)=O)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism;Amino sugar and nucleotide sugar metabolism
+D-Mannose 1-phosphate	CNC_69	4	C00636	HMDB06330	OC[C@H]1OC(OP(O)(O)=O)[C@@H](O)[C@@H](O)[C@@H]1O	Fructose and mannose metabolism;Amino sugar and nucleotide sugar metabolism
+D-Fructose 6-phosphate	F_6	4	C00085	HMDB00124	OCC(=O)[C@@H](O)[C@H](O)[C@H](O)COP(O)(O)=O	Galactose metabolism;Starch and sucrose metabolism;Carbon metabolism;AMPK signaling pathway;Glucagon signaling pathway;Insulin resistance;Central carbon metabolism in cancer
+D-Raffinose	R_1	2	C00492	HMDB03213	OC[C@H]1O[C@@](CO)(OC2O[C@H](COC3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O	Galactose metabolism;ABC transporters
+Guanosine 5-monophosphate	G_17	2	C00144	HMDB01397	NC1=NC2=C(N=CN2[C@@H]2O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N1	Purine metabolism;Antifolate resistance;cGMP-PKG signaling pathway;Olfactory transduction;Taste transduction;Phototransduction
+NADP	CNC_31_R	2	C00006	HMDB00217	NC(=O)C1=C[N+](=CC=C1)[C@@H]1O[C@H](CO[P@](O)(=O)O[P@](O)(=O)OC[C@H]2O[C@H]([C@H](OP(O)(O)=O)[C@@H]2O)N2C=NC3=C(N)N=CN=C23)[C@@H](O)[C@H]1O	Glutathione metabolism;Nicotinate and nicotinamide metabolism;Drug metabolism - other enzymes;Thyroid hormone synthesis;Aldosterone synthesis and secretion
+Melibiose	M_3	2	C05402	HMDB00048	OC[C@H]1O[C@H](OC[C@H]2OC(O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism;ABC transporters
+D-Maltose	M_4	2	C00208	HMDB00163	OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@H](O)[C@@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O	Starch and sucrose metabolism;ABC transporters;Taste transduction;Carbohydrate digestion and absorption
+2-Hydroxybutyric acid	20C_56	4	C05984	HMDB00008	CCC(O)C(O)=O	Propanoate metabolism
+(S)-3-Hydroxybutyric acid	CNC_151	4	C03197	HMDB00442	C[C@H](O)CC(O)=O	
+(S)-3-Hydroxyisobutyric acid	CNC_160	4	C06001	HMDB00023	C[C@@H](CO)C(O)=O	"Valine, leucine and isoleucine degradation"
+(R)-3-Hydroxyisobutyric acid	CNC_161	4		HMDB00336	C[C@H](CO)C(O)=O	
+3-Hydroxybutyric acid	CNC_20	4	C01089	HMDB00011	C[C@@H](O)CC(O)=O	Synthesis and degradation of ketone bodies;Butanoate metabolism;cAMP signaling pathway
+L-Malic acid	M_1	4	C00149	HMDB00156	O[C@@H](CC(O)=O)C(O)=O	Citrate cycle (TCA cycle);Pyruvate metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism;Taste transduction;Glucagon signaling pathway;Proximal tubule bicarbonate reclamation;Pathways in cancer;Renal cell carcinoma;Central carbon metabolism in cancer
+Adenylosuccinic acid	CNC_124	3	C03794	HMDB00536	O[C@@H]1[C@@H](COP(O)(O)=O)O[C@H]([C@@H]1O)N1C=NC2=C1N=CN=C2NC(CC(O)=O)C(O)=O	"Purine metabolism;Alanine, aspartate and glutamate metabolism"
+Propionyl coenzyme A	CNC_55	4	C00100	HMDB01275	CCC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	"Valine, leucine and isoleucine degradation;beta-Alanine metabolism;Glyoxylate and dicarboxylate metabolism;Propanoate metabolism;Carbon metabolism"
+"Adenosine 3,5-diphosphate"	CNC_92	4	C00054	HMDB00061	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](OP(O)(O)=O)[C@H]1O	Purine metabolism;Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate;Glycosaminoglycan biosynthesis - heparan sulfate / heparin;Pantothenate and CoA biosynthesis;Sulfur metabolism
+D-Saccharic acid	S_5	4	C00818	HMDB00663	O[C@@H]([C@H](O)[C@@H](O)C(O)=O)[C@H](O)C(O)=O	Ascorbate and aldarate metabolism
+Thiamine	T_11	1	C00378	HMDB00235	CC1=C(CCO)SC=[N+]1CC1=C(N)N=C(C)N=C1	Thiamine metabolism;ABC transporters;Sulfur relay system;Vitamin digestion and absorption
+2-Deoxycytidine 5-diphosphate	CNC_53	4	C00705	HMDB01245	NC1=NC(=O)N(C=C1)[C@H]1C[C@H](O)[C@@H](COP(O)(=O)OP(O)(O)=O)O1	Pyrimidine metabolism
+O-Phospho-L-serine	P_2	4	C01005	HMDB00272	N[C@@H](COP(O)(O)=O)C(O)=O	"Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Aminoacyl-tRNA biosynthesis;Carbon metabolism;Biosynthesis of amino acids"
+S-Lactoylglutathione	CNC_28	4	C03451	HMDB01066	C[C@@H](O)C(=O)SC[C@H](NC(=O)CC[C@H](N)C(O)=O)C(=O)NCC(O)=O	Pyruvate metabolism
+D-Pyroglutamic Acid	CNC_29	3	C02237	HMDB00805	OC(=O)C1CCC(=O)N1	D-Glutamine and D-glutamate metabolism
+L-Pyroglutamic acid	P_9	3	C01879	HMDB00267	OC(=O)[C@@H]1CCC(=O)N1	Glutathione metabolism
+N-Acetyl-L-aspartate	A_13	4	C01042	HMDB00812	CC(=O)N[C@@H](CC(O)=O)C(O)=O	"Alanine, aspartate and glutamate metabolism"
+D-Xylulose 5-phosphate	20C_39	4	C00231	HMDB00868	OCC(=O)[C@@H](O)[C@H](O)COP(O)(O)=O	Pentose phosphate pathway;Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Carbon metabolism;Biosynthesis of amino acids;Thyroid hormone synthesis
+D-Ribose 1-phosphate	20C_54	4	C00620	HMDB01489	OC[C@H]1O[C@H](OP(O)(O)=O)[C@H](O)[C@@H]1O	Pentose phosphate pathway;Purine metabolism
+D-Ribose 5-phosphate	20C_9	4	C00117	HMDB01548	OC1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O	Pentose phosphate pathway;Purine metabolism;Phosphonate and phosphinate metabolism;Carbon metabolism;Biosynthesis of amino acids;Thyroid hormone synthesis
+L-Fucose 1-phosphate	20C_65	4	C02985	HMDB01265	C[C@@H]1OC(OP(O)(O)=O)[C@@H](O)[C@H](O)[C@@H]1O	Fructose and mannose metabolism;Amino sugar and nucleotide sugar metabolism
+Hydroxypyruvate	L_4	3	C00168	HMDB01352	OCC(=O)C(O)=O	"Glycine, serine and threonine metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism"
+D-2-Hydroxyglutaric acid	4C_33	4	C01087	HMDB00606	O[C@H](CCC(O)=O)C(O)=O	
+L-2-Hydroxyglutaric acid	4C_34	4	C03196	HMDB00694	O[C@@H](CCC(O)=O)C(O)=O	Lysine degradation
+3-Hydroxyglutaric acid	CNC_109	4		HMDB00428	OC(CC(O)=O)CC(O)=O	
+Citramalic acid	CNC_139	4	C00815	HMDB00426	CC(O)(CC(O)=O)C(O)=O	
+Ethylmalonic acid	CNC_156	3		HMDB00622	CCC(C(O)=O)C(O)=O	
+Glutaric acid	CNC_5	3	C00489	HMDB00661	OC(=O)CCCC(O)=O	Fatty acid degradation;Lysine degradation
+D-3-Phosphoglyceric acid	20C_50	4	C00197	HMDB60180	O[C@H](COP(O)(O)=O)C(O)=O	"Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Glycerolipid metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism;Biosynthesis of amino acids;Glucagon signaling pathway;Central carbon metabolism in cancer"
+Maleic acid	CNC_22	4	C01384	HMDB00176	OC(=O)\C=C/C(O)=O	Tyrosine metabolism;Butanoate metabolism;Nicotinate and nicotinamide metabolism
+2-Deoxyinosine	20C_24	2	C05512	HMDB00071	OC[C@H]1O[C@H](C[C@@H]1O)N1C=NC2=C1N=CN=C2O	Purine metabolism;ABC transporters
+Orotic acid	O_1	4	C00295	HMDB00226	OC(=O)C1=CC(=O)NC(=O)N1	Pyrimidine metabolism
+Citric acid	C_1	4	C00158	HMDB00094	OC(=O)CC(O)(CC(O)=O)C(O)=O	"Citrate cycle (TCA cycle);Alanine, aspartate and glutamate metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Taste transduction;Glucagon signaling pathway;Central carbon metabolism in cancer"
+Isocitric acid	I_1	4	C00311	HMDB00193	OC(C(CC(O)=O)C(O)=O)C(O)=O	Citrate cycle (TCA cycle);Glyoxylate and dicarboxylate metabolism;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Glucagon signaling pathway;Central carbon metabolism in cancer
+5-Methyltetrahydrofolic acid	20C_48	4	C00440	HMDB01396	CN1C(CNC2=CC=C(C=C2)C(=O)N[C@H](CCC(O)=O)C(O)=O)CNC2=C1C(=O)NC(N)=N2	One carbon pool by folate;Carbon metabolism;Antifolate resistance
+D-Glutamic acid	G_21	4	C00217	HMDB03339	N[C@H](CCC(O)=O)C(O)=O	D-Glutamine and D-glutamate metabolism
+2-Deoxyuridine	D_6	2	C00526	HMDB00012	OC[C@H]1O[C@H](C[C@@H]1O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;ABC transporters
+4-Imidazoleacetic acid	I_7	1	C02835	HMDB02024	OC(=O)CC1=CN=CN1	Histidine metabolism
+Folinic acid	CNC_52	4	C03479	HMDB01562	NC1=NC2=C(N(C=O)C(CNC3=CC=C(C=C3)C(=O)NC(CCC(O)=O)C(O)=O)CN2)C(=O)N1	One carbon pool by folate
+AICAR	CNC_180	4	C04677	HMDB01517	NC(=O)C1=C(N)N(C=N1)[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O	Purine metabolism;Histidine metabolism;AMPK signaling pathway
+S-(5-Adenosyl)-L-homocysteine	CNC_203	1	C00021	HMDB00939	N[C@@H](CCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC2=C(N)N=CN=C12)C(O)=O	Cysteine and methionine metabolism;Biosynthesis of amino acids
+Phosphoenolpyruvic acid	20C_59	4	 C00074	HMDB00263	OC(=O)C(=C)OP(O)(O)=O	"Glycolysis / Gluconeogenesis;Citrate cycle (TCA cycle);Phenylalanine, tyrosine and tryptophan biosynthesis;Phosphonate and phosphinate metabolism;Pyruvate metabolism;Carbon metabolism;Biosynthesis of amino acids;Glucagon signaling pathway;Proximal tubule bicarbonate reclamation;Central carbon metabolism in cancer"
+L-Arabitol	A_2	4	C00532	HMDB01851	OC[C@H](O)C(O)[C@@H](O)CO	Pentose and glucuronate interconversions
+N-Acetyl-Asp-Glu	CNC_90	4	C12270	HMDB01067	CC(=O)NC(CC(O)=O)C(=O)NC(CCC(O)=O)C(O)=O	"Alanine, aspartate and glutamate metabolism;Neuroactive ligand-receptor interaction"
+L-Lysine	L_3	3	C00047	HMDB00182	NCCCC[C@H](N)C(O)=O	Lysine degradation;Biotin metabolism;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption
+NADH	CNC_101	4	C00004	HMDB01487	NC(=O)C1=CN(C=CC1)[C@@H]1O[C@H](CO[P@](O)(=O)O[P@](O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)N2C=NC3=C(N)N=CN=C23)[C@@H](O)[C@H]1O	Oxidative phosphorylation;Calcium signaling pathway;Thermogenesis;Aldosterone synthesis and secretion
+2-Deoxyguanosine 5-monophosphate	20C_23	4	C00362	HMDB01044	NC1=NC2=C(N=CN2[C@H]2C[C@H](O)[C@@H](COP(O)(O)=O)O2)C(=O)N1	Purine metabolism
+3-Furoic acid	CNC_148	4		HMDB00444	OC(=O)C1=COC=C1	
+2-Deoxyuridine 5-monophosphate	CNC_87	4	C00365	HMDB01409	O[C@H]1C[C@@H](O[C@@H]1COP(O)(O)=O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;Antifolate resistance
+Deoxyadenosine monophosphate	20C_36	4	C00360	HMDB00905	NC1=NC=NC2=C1N=CN2[C@H]1C[C@H](O)[C@@H](COP(O)(O)=O)O1	Purine metabolism
+"2,3-Pyridinedicarboxylic acid"	P_7	4	C03722	HMDB00232	OC(=O)C1=CC=CN=C1C(O)=O	Tryptophan metabolism;beta-Alanine metabolism;Nicotinate and nicotinamide metabolism
+Citraconic acid	CNC_19	3	C02226	HMDB00634	C\C(=C\C(O)=O)C(O)=O	"Valine, leucine and isoleucine biosynthesis;2-Oxocarboxylic acid metabolism"
+Cytidine 5-diphosphate	CNC_70	4	C00112	HMDB01546	NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O	Pyrimidine metabolism
+2-Deoxy-D-ribonic acid	CNC_185	4		HMDB00366	OC[C@@H](O)[C@@H](O)CC(O)=O	
+Thymidine monophosphate	20C_37	4	C00364	HMDB01227	CC1=CN([C@H]2C[C@H](O)[C@@H](COP(O)(O)=O)O2)C(=O)NC1=O	Pyrimidine metabolism;Antifolate resistance
+Galactinol	CNC_201	4	C01235	HMDB05826	OC[C@H]1O[C@H](OC2[C@H](O)[C@@H](O)C(O)[C@@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism
+Trehalose	T_1	4	C01083	HMDB00975	OC[C@H]1O[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@H](O)[C@@H](O)[C@@H]1O	Starch and sucrose metabolism;ABC transporters
+Methylmalonic acid	M_5	3	C02170	HMDB00202	CC(C(O)=O)C(O)=O	"Pyrimidine metabolism;Valine, leucine and isoleucine degradation;Propanoate metabolism"
+Succinic acid	S_1	3	C00042	HMDB00254	OC(=O)CCC(O)=O	"Citrate cycle (TCA cycle);Oxidative phosphorylation;Alanine, aspartate and glutamate metabolism;Lysine degradation;Tyrosine metabolism;Phenylalanine metabolism;Pyruvate metabolism;Glyoxylate and dicarboxylate metabolism;Propanoate metabolism;Butanoate metabolism;Nicotinate and nicotinamide metabolism;Sulfur metabolism;Carbon metabolism;cAMP signaling pathway;GABAergic synapse;Glucagon signaling pathway;Central carbon metabolism in cancer"
+Guanidineacetic acid	G_20	1	C00581	HMDB00128	NC(=N)NCC(O)=O	"Glycine, serine and threonine metabolism;Arginine and proline metabolism"
+2-Oxo-4-methylthiobutanoic acid	4C_43	3	C01180	HMDB01553	CSCCC(=O)C(O)=O	Cysteine and methionine metabolism;2-Oxocarboxylic acid metabolism
+Glutaconic acid	CNC_150	4	C02214	HMDB00620	OC(=O)C\C=C\C(O)=O	
+1-Methylnicotinamide	CNC_149	1	C02918	HMDB00699	C[N+]1=CC=CC(=C1)C(N)=O	Nicotinate and nicotinamide metabolism;Bile secretion
+cis-Aconitic acid	20C_8	4	C00417	HMDB00072	OC(=O)C\C(=C\C(O)=O)C(O)=O	Citrate cycle (TCA cycle);Glyoxylate and dicarboxylate metabolism;2-Oxocarboxylic acid metabolism
+Dehydroascorbic acid	D_3	4	C05422	HMDB01264	[H][C@@]1(OC(=O)C(=O)C1=O)[C@H](O)CO	Ascorbate and aldarate metabolism;Glutathione metabolism
+Orotidine 5-monophosphate	CNC_77	4	C01103	HMDB00218	O[C@H]1[C@@H](O)[C@@H](O[C@@H]1COP(O)(O)=O)N1C(=O)NC(=O)C=C1C(O)=O	Pyrimidine metabolism
+L-alpha-Glycerophosphorylcholine	CNC_79	1	C00670	HMDB00086	C[N+](C)(C)CCOP([O-])(=O)OC[C@@H](O)CO	Glycerophospholipid metabolism;Ether lipid metabolism;Choline metabolism in cancer
+L-Kynurenine	CNC_165	1	C00328	HMDB00684	N[C@@H](CC(=O)C1=CC=CC=C1N)C(O)=O	Tryptophan metabolism;African trypanosomiasis
+4-Pyridoxic acid	CNC_187	4	C00847	HMDB00017	CC1=NC=C(CO)C(C(O)=O)=C1O	Vitamin B6 metabolism
+Homocitrulline	CNC_125	1	C02427	HMDB00679	N[C@@H](CCCCNC(N)=O)C(O)=O	
+2-Deoxycytidine 5-monophosphate	20C_75	4	 C00239	HMDB01202	NC1=NC(=O)N(C=C1)[C@H]1C[C@H](O)[C@@H](COP(O)(O)=O)O1	Pyrimidine metabolism
+2-Oxoadipic acid	CNC_129	3	C00322	HMDB00225	OC(=O)CCCC(=O)C(O)=O	Lysine degradation;Tryptophan metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids
+Pyruvate	4C_1	3	C00022	HMDB00243	CC(=O)C(O)=O	"Glycolysis / Gluconeogenesis;Citrate cycle (TCA cycle);Pentose phosphate pathway;Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Alanine, aspartate and glutamate metabolism;Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Valine, leucine and isoleucine biosynthesis;Arginine and proline metabolism;Tyrosine metabolism;Phenylalanine metabolism;Taurine and hypotaurine metabolism;Phosphonate and phosphinate metabolism;Pyruvate metabolism;Glyoxylate and dicarboxylate metabolism;Butanoate metabolism;Thiamine metabolism;Nicotinate and nicotinamide metabolism;Pantothenate and CoA biosynthesis;Terpenoid backbone biosynthesis;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;HIF-1 signaling pathway;AMPK signaling pathway;Insulin secretion;Glucagon signaling pathway;Type II diabetes mellitus;Insulin resistance;Central carbon metabolism in cancer"
+UDP-Glucuronate	CNC_93	2	C00167	HMDB00935	O[C@@H]1[C@@H](COP(O)(=O)OP(O)(=O)O[C@H]2O[C@@H]([C@@H](O)[C@H](O)[C@H]2O)C(O)=O)O[C@H]([C@@H]1O)N1C=CC(=O)NC1=O	Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Amino sugar and nucleotide sugar metabolism
+Cytidine 5-diphosphocholine	CNC_152	4	C00307	HMDB01413	C[N+](C)(C)CCOP([O-])(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(N)=NC1=O	Glycerophospholipid metabolism;Choline metabolism in cancer
+"D-Fructose 1,6-bisphosphate"	20C_7	4	C05378	HMDB60444	O[C@H]1[C@H](O)[C@@](O)(COP(O)(O)=O)O[C@@H]1COP(O)(O)=O	Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Fructose and mannose metabolism;Carbon metabolism;Biosynthesis of amino acids
+"D-Glucose 1,6-bisphosphate"	CNC_66	4	C01231	HMDB03514	O[C@H]1[C@H](O)[C@@H](COP(O)(O)=O)O[C@H](OP(O)(O)=O)[C@@H]1O	Starch and sucrose metabolism
+D-galactaric acid	CNC_145	3	C00879	HMDB00639	O[C@@H]([C@@H](O)[C@H](O)C(O)=O)[C@@H](O)C(O)=O	Ascorbate and aldarate metabolism
+D-Sorbitol	S_2	2	C00794	HMDB00247	OC[C@H](O)[C@@H](O)[C@H](O)[C@H](O)CO	Fructose and mannose metabolism;Galactose metabolism;ABC transporters
+Uridine	U_5	2	C00299	HMDB00296	OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;ABC transporters
+L-Arginine	A_15	3	C00062	HMDB00517	N[C@@H](CCCN=C(N)N)C(O)=O	Arginine biosynthesis;Arginine and proline metabolism;D-Arginine and D-ornithine metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;mTOR signaling pathway;Protein digestion and absorption;Amyotrophic lateral sclerosis (ALS);Chagas disease (American trypanosomiasis);Amoebiasis;Central carbon metabolism in cancer
+Cytidine	C_7	1	C00475	HMDB00089	NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O	Pyrimidine metabolism;ABC transporters
+Adonitol	CNC_12	2	C00474	HMDB00508	OC[C@H](O)[C@H](O)[C@H](O)CO	Pentose and glucuronate interconversions;Riboflavin metabolism
+D-Arabitol	CNC_8	2	C01904	HMDB00568	OCC(O)C(O)C(O)CO	Pentose and glucuronate interconversions
+Thymidine	T_5	2	C00214	HMDB00273	CC1=CN([C@H]2C[C@H](O)[C@@H](CO)O2)C(=O)NC1=O	Pyrimidine metabolism
+Xanthurenic acid	X_5	4	C02470	HMDB00881	OC(=O)C1=NC2=C(O)C=CC=C2C(O)=C1	Tryptophan metabolism
+Putrescine	P_3	1	C00134	HMDB01414	NCCCCN	Arginine and proline metabolism;D-Arginine and D-ornithine metabolism;Glutathione metabolism;ABC transporters;Protein digestion and absorption
+D-Arabinonic acid	CNC_157	3	C00878	HMDB00539	OC[C@@H](O)[C@@H](O)[C@H](O)C(O)=O	
+N-Formylanthranilic acid	20C_80	4	 C05653	HMDB04089	OC(=O)C1=CC=CC=C1NC=O	Tryptophan metabolism
+Ureidoisobutyric acid	CNC_202	1	C05100	HMDB02031	CC(CNC(N)=O)C(O)=O	
+L-Glutamine	G_14	1	C00064	HMDB00641	N[C@@H](CCC(N)=O)C(O)=O	"Arginine biosynthesis;Purine metabolism;Pyrimidine metabolism;Alanine, aspartate and glutamate metabolism;D-Glutamine and D-glutamate metabolism;Glyoxylate and dicarboxylate metabolism;Nitrogen metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;Glutamatergic synapse;GABAergic synapse;Proximal tubule bicarbonate reclamation;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+D-Glutamine	G_22	1	C00819	HMDB03423	N[C@H](CCC(N)=O)C(O)=O	D-Glutamine and D-glutamate metabolism
+Prostaglandin D2	Cay_10	4	C00696	HMDB01403	CCCCC[C@H](O)\C=C\[C@@H]1[C@@H](C\C=C/CCCC(O)=O)[C@@H](O)CC1=O	Arachidonic acid metabolism;Neuroactive ligand-receptor interaction;Fc epsilon RI signaling pathway;Serotonergic synapse;African trypanosomiasis;Asthma
+Prostaglandin I2	Cay_11	4	C01312	HMDB01335	CCCCC[C@H](O)\C=C\[C@H]1[C@H](O)C[C@@H]2OC(C[C@H]12)=CCCCC(O)=O	Arachidonic acid metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;Vascular smooth muscle contraction;VEGF signaling pathway;Platelet activation
+Prostaglandin E2	Cay_2	4	C00584	HMDB01220	CCCCC[C@H](O)\C=C\[C@H]1[C@H](O)CC(=O)[C@@H]1C\C=C/CCCC(O)=O	Arachidonic acid metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;C-type lectin receptor signaling pathway;Serotonergic synapse;Inflammatory mediator regulation of TRP channels;Oxytocin signaling pathway;Regulation of lipolysis in adipocytes;Renin secretion;Bile secretion;Leishmaniasis;African trypanosomiasis;Amoebiasis;Human cytomegalovirus infection;Human papillomavirus infection;Pathways in cancer;Rheumatoid arthritis
+3-Hydroxy-DL-kynurenine	CNC_179	1	C02794	HMDB00732	NC(CC(=O)C1=C(N)C(O)=CC=C1)C(O)=O	
+Isobutyrylglycine	CNC_173	3		HMDB00730	CC(C)C(=O)NCC(O)=O	
+5-Methyluridine	CNC_103	1		HMDB00884	CC1=CN([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)C(=O)NC1=O	
+Acetylamino-acetic acid	CNC_13	4		HMDB00532	CC(=O)NCC(O)=O	
+Carnitine	C_11	1	C00487	HMDB00062	C[N+](C)(C)C[C@H](O)CC([O-])=O	Lysine degradation;ABC transporters
+Inosine	I_4	1	C00294	HMDB00195	OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC2=C1N=CNC2=O	Purine metabolism;ABC transporters
+L-Asparagine	A_11	1	C00152	HMDB00168	N[C@@H](CC(N)=O)C(O)=O	"Alanine, aspartate and glutamate metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+Ureidopropionic acid	U_6	1	C02642	HMDB00026	NC(=O)NCCC(O)=O	Pyrimidine metabolism;beta-Alanine metabolism;Pantothenate and CoA biosynthesis
+Pyridoxamine	20C_34	1	C00534	HMDB01431	CC1=C(O)C(CN)=C(CO)C=N1	Vitamin B6 metabolism;Vitamin digestion and absorption
+N-methyl-4-pyridone-3-carboxamide	CNC_108	1	C05843	HMDB04194	CN1C=CC(=O)C(=C1)C(N)=O	Nicotinate and nicotinamide metabolism
+Agmatine	A_16	1	C00179	HMDB01432	NCCCCNC(N)=N	Arginine and proline metabolism
+"2,5-Dihydroxybenzoic acid"	D_9	4	C00628	HMDB00152	OC(=O)C1=CC(O)=CC=C1O	Tyrosine metabolism
+6-Deoxy-L-galactonic acid	CNC_138	4	C01720		C[C@@H]([C@H]([C@H]([C@@H](C(=O)O)O)O)O)O	Fructose and mannose metabolism
+Propionylglycine	CNC_105	4		HMDB00783	CCC(=O)NCC(O)=O	
+N-Acetyl-L-alanine	CNC_2	4		HMDB00766	C[C@H](NC(C)=O)C(O)=O	
+Beta-alanine	A_4	1	C00099	HMDB00056	NCCC(O)=O	Pyrimidine metabolism;beta-Alanine metabolism;Propanoate metabolism;Pantothenate and CoA biosynthesis;Neuroactive ligand-receptor interaction;Protein digestion and absorption
+L-Alanine	A_9	1	C00041	HMDB00161	C[C@H](N)C(O)=O	"Alanine, aspartate and glutamate metabolism;Cysteine and methionine metabolism;Taurine and hypotaurine metabolism;Selenocompound metabolism;Aminoacyl-tRNA biosynthesis;Carbon metabolism;Biosynthesis of amino acids;ABC transporters;Sulfur relay system;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+Biotin	B_4	1	C00120	HMDB00030	[H][C@]12CS[C@@H](CCCCC(O)=O)[C@@]1([H])NC(=O)N2	Biotin metabolism;ABC transporters;Vitamin digestion and absorption
+Adenine	A_8	2	C00147	HMDB00034	NC1=NC=NC2=C1NC=N2	Purine metabolism
+D-Glucosamine 6-phosphate	CNC_9	4	C00352	HMDB01254	N[C@H]1[C@@H](O)O[C@H](COP(O)(O)=O)[C@@H](O)[C@@H]1O	"Alanine, aspartate and glutamate metabolism;Amino sugar and nucleotide sugar metabolism;Insulin resistance"
+3-Hydroxyanthranilic acid	H_15	4	C00632	HMDB01476	NC1=C(O)C=CC=C1C(O)=O	Tryptophan metabolism
+"D-Erythrono-1,4-lactone"	CNC_126	2		HMDB00349	O[C@@H]1COC(=O)[C@@H]1O	
+Benzoate	B_2	3	C00180	HMDB01870	OC(=O)C1=CC=CC=C1	Phenylalanine metabolism
+L-Fucose	F_3	2	C01019	HMDB00174	C[C@@H]1OC(O)[C@@H](O)[C@H](O)[C@@H]1O	Fructose and mannose metabolism;Amino sugar and nucleotide sugar metabolism;C-type lectin receptor signaling pathway
+Thiamine pyrophosphate	20C_2	2	C00068	HMDB01372	CC1=C(CCO[P@](O)(=O)OP(O)(O)=O)SC=[N+]1CC1=CN=C(C)N=C1N	"Glycolysis / Gluconeogenesis;Citrate cycle (TCA cycle);Valine, leucine and isoleucine degradation;Pyruvate metabolism;Propanoate metabolism;Thiamine metabolism;Vitamin digestion and absorption"
+D-Glucosamine	G_11	1	C00329	HMDB01514	N[C@H]1C(O)O[C@H](CO)[C@@H](O)[C@@H]1O	Amino sugar and nucleotide sugar metabolism
+DL-Mandelic acid	CNC_3	4	C01984	HMDB00703	O[C@H](C(O)=O)C1=CC=CC=C1	
+L-Tryptophan	T_6	4	C00078	HMDB00929	N[C@@H](CC1=CNC2=CC=CC=C12)C(O)=O	"Glycine, serine and threonine metabolism;Tryptophan metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Serotonergic synapse;Protein digestion and absorption;Mineral absorption;African trypanosomiasis;Central carbon metabolism in cancer"
+"3,4-Dihydroxyphenylacetic acid"	D_10	4	C01161	HMDB01336	OC(=O)CC1=CC=C(O)C(O)=C1	Tyrosine metabolism;Dopaminergic synapse;Cocaine addiction;Amphetamine addiction;Alcoholism
+L-Arabinose	A_1	1	C00259	HMDB00646	O[C@H]1COC(O)[C@H](O)[C@H]1O	Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Amino sugar and nucleotide sugar metabolism;ABC transporters
+L-Ribulose	CNC_159	1	C00508	HMDB03371	OCC1(O)OC[C@@H](O)[C@@H]1O	Pentose and glucuronate interconversions
+D-Xylose	X_1	1	C00181	HMDB00098	O[C@@H]1COC(O)[C@H](O)[C@H]1O	Pentose and glucuronate interconversions;Amino sugar and nucleotide sugar metabolism;ABC transporters
+Phosphatidylserine	AVL_6	4	C02737	HMDB00614	CCCCCCCCCCCCCCCC(=O)OCC(COP(O)(=O)OC[C@H](N)C(O)=O)OC(=O)CCCCCCCCCCCCCCC	"Glycine, serine and threonine metabolism;Glycerophospholipid metabolism;Leishmaniasis;Amoebiasis;Systemic lupus erythematosus"
+Creatine	C_8	1	C00300	HMDB00064	CN(CC(O)=O)C(N)=N	"Glycine, serine and threonine metabolism;Arginine and proline metabolism"
+Histamine	H_14	1	C00388	HMDB00870	NCCC1=CNC=N1	Histidine metabolism;Neuroactive ligand-receptor interaction;Fc epsilon RI signaling pathway;Synaptic vesicle cycle;Inflammatory mediator regulation of TRP channels;Gastric acid secretion;Protein digestion and absorption;Asthma
+Ascorbate	A_3	4	C00072	HMDB00044	[H][C@@]1(OC(=O)C(O)=C1O)[C@@H](O)CO	Ascorbate and aldarate metabolism;Glutathione metabolism;HIF-1 signaling pathway;Vitamin digestion and absorption
+Norepinephrine	CNC_95	1	C00547	HMDB00216	NC[C@H](O)C1=CC(O)=C(O)C=C1	Tyrosine metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;Adrenergic signaling in cardiomyocytes;Vascular smooth muscle contraction;Gap junction;Thermogenesis;Synaptic vesicle cycle;Taste transduction;Regulation of lipolysis in adipocytes;Renin secretion;Salivary secretion
+Pyridoxine	P_11	1	C00314	HMDB00239	CC1=NC=C(CO)C(CO)=C1O	Vitamin B6 metabolism
+Xanthosine 5-monophosphate	CNC_143	3	C00655	HMDB01554	O[C@@H]1[C@@H](COP(O)(O)=O)O[C@H]([C@@H]1O)N1C=NC2=C1NC(=O)NC2=O	Purine metabolism
+D-Lactaldehyde	20C_14	3	C00937	HMDB06458	C[C@@H](O)C=O	Pyruvate metabolism
+Succinyl coenzyme A	20C_52	3	C00091	HMDB01022	CC(C)(COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N)C(O)C(=O)NCCC(=O)NCCSC(=O)CCC(O)=O	"Citrate cycle (TCA cycle);Valine, leucine and isoleucine degradation;Phenylalanine metabolism;Glyoxylate and dicarboxylate metabolism;Propanoate metabolism;Butanoate metabolism;Carbon metabolism"
+Epinephrine	4C_21	1	C00788	HMDB00068	CNC[C@H](O)C1=CC=C(O)C(O)=C1	Tyrosine metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;Adrenergic signaling in cardiomyocytes;Regulation of lipolysis in adipocytes;Renin secretion
+L-Cysteine	C_3	3	C00097	HMDB00574	N[C@@H](CS)C(O)=O	"Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Taurine and hypotaurine metabolism;Glutathione metabolism;Thiamine metabolism;Pantothenate and CoA biosynthesis;Sulfur metabolism;Aminoacyl-tRNA biosynthesis;Carbon metabolism;Biosynthesis of amino acids;Sulfur relay system;Ferroptosis;Protein digestion and absorption;Central carbon metabolism in cancer"
+trans-4-Hydroxy-L-proline	H_4	1	C01157	HMDB00725	O[C@H]1CN[C@@H](C1)C(O)=O	Arginine and proline metabolism;ABC transporters
+cis-4-Hydroxy-D-proline	H_5	1	C03440	HMDB60460	O[C@H]1CN[C@H](C1)C(O)=O	Arginine and proline metabolism
+D-Gluconic acid	G_5	3	C00257	HMDB00625	OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C(O)=O	Pentose phosphate pathway;Carbon metabolism
+D-Ribose	4C_4	2	C00121	HMDB00283	OC[C@H]1OC(O)[C@H](O)[C@@H]1O	Pentose phosphate pathway;ABC transporters
+D-Xylulose	CNC_47	2	C00310	HMDB01644	OC[C@@H](O)[C@H](O)C(=O)CO	Pentose and glucuronate interconversions
+2-Aminoadipic acid	A_14	1	C00956	HMDB00510	NC(CCCC(O)=O)C(O)=O	Lysine degradation;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids
+Cytidine-5-monophospho-N-acetylneuraminic acid	20C_43	2	C00128	HMDB01176	[H][C@]1(O[C@](C[C@H](O)[C@H]1NC(C)=O)(OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(N)=NC1=O)C(O)=O)[C@H](O)[C@H](O)CO	Amino sugar and nucleotide sugar metabolism
+O-Acetyl-L-carnitine	CNC_45	1	C02571	HMDB00201	CC(=O)OC(CC([O-])=O)C[N+](C)(C)C	Insulin resistance
+Dodecanedioic acid	CNC_133	4	C02678	HMDB00623	OC(=O)CCCCCCCCCCC(O)=O	
+Deoxyadenosine diphosphate	20C_74	2	 C00206	HMDB01508	NC1=NC=NC2=C1N=CN2C1C[C@H](O)[C@@H](COP(O)(=O)OP(O)(O)=O)O1	Purine metabolism
+Riboflavin	R_2	1	C00255	HMDB00244	CC1=C(C)C=C2N(C[C@H](O)[C@H](O)[C@H](O)CO)C3=NC(=O)NC(=O)C3=NC2=C1	Riboflavin metabolism;ABC transporters;Vitamin digestion and absorption
+N-a-Acetyl-L-ornithine	20C_77	2	 C00437	HMDB03357	CC(=O)N[C@@H](CCCN)C(O)=O	Arginine biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids
+Pantothenic acid	P_8	1	C00864	HMDB00210	CC(C)(CO)C(O)C(=O)NCCC(O)=O	beta-Alanine metabolism;Pantothenate and CoA biosynthesis;Vitamin digestion and absorption
+D-Ornithine	O_3	2	C00515	HMDB03374	NCCC[C@@H](N)C(O)=O	D-Arginine and D-ornithine metabolism
+Cytidine 5-triphosphate	CNC_68	4	C00063	HMDB00082	NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O	Pyrimidine metabolism;Mannose type O-glycan biosynthesis
+Phenylpyruvate	4C_24	3	C00166	HMDB00205	OC(=O)C(=O)CC1=CC=CC=C1	"Phenylalanine metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids"
+Guanine	G_18	2	C00242	HMDB00132	NC1=NC(=O)C2=C(N1)N=CN2	Purine metabolism
+Metanephrine	4C_44	2	C05588	HMDB04063	CNCC(O)C1=CC(OC)=C(O)C=C1	Tyrosine metabolism
+"3,3-Dimethylacrylic acid"	CNC_114	4		HMDB00509	CC(C)=CC(O)=O	
+"D-Glucurono-6,3-lactone"	G_10	3	C02670	HMDB06355	O[C@@H]1O[C@@H]2[C@@H](O)C(=O)O[C@@H]2[C@H]1O	Ascorbate and aldarate metabolism
+Cyclic GMP	CNC_51	3	C00942	HMDB01314	NC1=NC2=C(N=CN2[C@@H]2O[C@@H]3COP(O)(=O)O[C@H]3[C@H]2O)C(=O)N1	Purine metabolism;cGMP-PKG signaling pathway;Vascular smooth muscle contraction;Gap junction;Platelet activation;Circadian entrainment;Thermogenesis;Long-term depression;Olfactory transduction;Phototransduction;Oxytocin signaling pathway;Regulation of lipolysis in adipocytes;Renin secretion;Aldosterone synthesis and secretion;Salivary secretion;Bile secretion
+Betaine aldehyde	4C_42_R	1	C00576	HMDB01252	C[N+](C)(C)CC=O	"Glycine, serine and threonine metabolism"
+L-Cystathionine	CNC_190	3	C02291	HMDB00099	N[C@@H](CCSC[C@H](N)C(O)=O)C(O)=O	"Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Biosynthesis of amino acids"
+D-Glucuronic acid	G_7	3	C00191	HMDB00127	O[C@H]1O[C@@H]([C@@H](O)[C@H](O)[C@H]1O)C(O)=O	Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Amino sugar and nucleotide sugar metabolism;Inositol phosphate metabolism
+2-Deoxyguanosine	D_14	2	C00330	HMDB00085	NC1=NC2=C(N=CN2[C@H]2C[C@H](O)[C@@H](CO)O2)C(=O)N1	Purine metabolism;ABC transporters
+Cytidine monophosphate	4C_16	3	C00055	HMDB00095	NC1=NC(=O)N(C=C1)[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O	Pyrimidine metabolism
+1-Methylhistamine	CNC_32	1	C05127	HMDB00898	CN1C=NC(CCN)=C1	Histidine metabolism
+Xanthine	X_3	2	C00385	HMDB00292	O=C1NC2=C(NC=N2)C(=O)N1	Purine metabolism;Caffeine metabolism
+2-Deoxycytidine	20C_25	1	C00881	HMDB00014	NC1=NC(=O)N(C=C1)[C@H]1C[C@H](O)[C@@H](CO)O1	Pyrimidine metabolism;ABC transporters
+"2,3-Dihydroxypropanoic acid"	CNC_113	4	C00258	HMDB00139	OC[C@@H](O)C(O)=O	"Pentose phosphate pathway;Glycine, serine and threonine metabolism;Glycerolipid metabolism;Glyoxylate and dicarboxylate metabolism;Carbon metabolism"
+D-Lactose	L_1	2	C00243	HMDB00186	OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism;ABC transporters;Carbohydrate digestion and absorption
+Adenosine monophosphate	A_7	3	C00020	HMDB00045	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O	"Purine metabolism;Antifolate resistance;cGMP-PKG signaling pathway;cAMP signaling pathway;FoxO signaling pathway;mTOR signaling pathway;PI3K-Akt signaling pathway;AMPK signaling pathway;Longevity regulating pathway;Olfactory transduction;Taste transduction;Regulation of lipolysis in adipocytes;Renin secretion;Aldosterone synthesis and secretion;Cortisol synthesis and secretion;Parathyroid hormone synthesis, secretion and action;Cushing syndrome;Parkinson disease;Morphine addiction"
+D-Fructose	F_2	1	C00095	HMDB00660	OC[C@H]1O[C@](O)(CO)[C@@H](O)[C@@H]1O	Fructose and mannose metabolism;Galactose metabolism;Starch and sucrose metabolism;ABC transporters;Taste transduction;Insulin resistance;Carbohydrate digestion and absorption
+D-Galactose	G_8	1	C00124	HMDB00143	OC[C@H]1O[C@H](O)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism;Carbohydrate digestion and absorption;Mineral absorption
+Myoinositol	I_2	1	C00137	HMDB00211	O[C@H]1[C@H](O)[C@@H](O)[C@H](O)[C@H](O)[C@@H]1O	Galactose metabolism;Ascorbate and aldarate metabolism;Inositol phosphate metabolism;ABC transporters;Phosphatidylinositol signaling system
+Butyryl coenzyme A	20C_41	2	C00136	HMDB01088	CCCC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OCC1OC(C(O)C1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	Fatty acid elongation;Fatty acid degradation;Lysine degradation;Glyoxylate and dicarboxylate metabolism;Butanoate metabolism;Carbon metabolism;Fatty acid metabolism
+4-Phenylbutanoic acid	CNC_147	4		HMDB00543	OC(=O)CCCC1=CC=CC=C1	
+Guanosine	G_19	3	C00387	HMDB00133	NC1=NC2=C(N=CN2[C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)C(=O)N1	Purine metabolism;ABC transporters
+UDP-GalNAc	20C_47	2	C00203	HMDB00304	CC(O)=NC1C(OP(O)(=O)OP(O)(=O)OCC2OC(C(O)C2O)N2C=CC(O)=NC2=O)OC(CO)C(O)C1O	Amino sugar and nucleotide sugar metabolism
+UDP-GlcNAc	CNC_61	2	C00043	HMDB00290	CC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O[C@@H]1OP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(=O)NC1=O	"Amino sugar and nucleotide sugar metabolism;Neomycin, kanamycin and gentamicin biosynthesis;Insulin resistance"
+Flavin Mononucleotide	20C_71	2	C00061	HMDB01520	CC1=CC2=C(C=C1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(O)(O)=O)C1=NC(=O)NC(=O)C1=N2	Oxidative phosphorylation;Riboflavin metabolism;Vitamin digestion and absorption
+N-Acetylputrescine	4C_35	2	C02714	HMDB02064	CC(=O)NCCCCN	Arginine and proline metabolism
+Deoxyuridine triphosphate	20C_81	4	 C00460	HMDB01191	O[C@H]1C[C@@H](O[C@@H]1COP(O)(=O)OP(O)(=O)OP(O)(O)=O)N1C=CC(=O)NC1=O	Pyrimidine metabolism
+N-Acetylmuramic acid	CNC_54	3	C02713	HMDB60493	C[C@@H](O[C@H]1[C@H](O)[C@@H](CO)OC(O)[C@@H]1N=C(C)O)C(O)=O	Amino sugar and nucleotide sugar metabolism
+Pyridoxamine-5-phosphate	CNC_144	3	C00647	HMDB01555	CC1=NC=C(COP(O)(O)=O)C(CN)=C1O	Vitamin B6 metabolism;Vitamin digestion and absorption
+N-Acetyl-D-glucosamine	20C_11	2	C00140	HMDB00215	CC(=O)N[C@H]1C(O)O[C@H](CO)[C@@H](O)[C@@H]1O	Amino sugar and nucleotide sugar metabolism;ABC transporters
+N-Acetyl-D-galactosamine	4C_6	2	C01132	HMDB00212	CC(=O)N[C@H]1[C@@H](O)O[C@H](CO)[C@H](O)[C@@H]1O	Galactose metabolism
+3-methyl-2-oxobutyrate	M_9	3	C00141	HMDB00019	CC(C)C(=O)C(O)=O	"Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;Pantothenate and CoA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids"
+L-Phenylalanine	P_6	3	C00079	HMDB00159	N[C@@H](CC1=CC=CC=C1)C(O)=O	"Phenylalanine metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+Guanosine diphosphate mannose	CNC_83	2	C00096	HMDB01163	NC1=NC2=C(N=CN2[C@@H]2O[C@H](COP(O)(=O)OP(O)(=O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]3O)[C@@H](O)[C@H]2O)C(=O)N1	Fructose and mannose metabolism;Ascorbate and aldarate metabolism;N-Glycan biosynthesis;Amino sugar and nucleotide sugar metabolism
+D-Sedoheptulose 7-phosphate	20C_63	4	C05382	HMDB01068	OCC1(O)O[C@H](COP(O)(O)=O)[C@@H](O)[C@@H](O)[C@@H]1O	Pentose phosphate pathway;Carbon metabolism;Biosynthesis of amino acids
+Cysteamine	4C_39	1	C01678	HMDB02991	NCCS	Taurine and hypotaurine metabolism
+L-Tyrosine	T_8	2	C00082	HMDB00158	N[C@@H](CC1=CC=C(O)C=C1)C(O)=O	"Ubiquinone and other terpenoid-quinone biosynthesis;Tyrosine metabolism;Phenylalanine metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;Thiamine metabolism;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Dopaminergic synapse;Melanogenesis;Prolactin signaling pathway;Protein digestion and absorption;Parkinson disease;Cocaine addiction;Amphetamine addiction;Alcoholism;Central carbon metabolism in cancer"
+1-Methyl-L-histidine	CNC_127	2	C01152	HMDB00001	CN1C=NC(C[C@H](N)C(O)=O)=C1	Histidine metabolism
+Inosine 5-triphosphate	CNC_91	4	C00081	HMDB00189	O[C@@H]1[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O[C@H]([C@@H]1O)N1C=NC2=C1N=CN=C2O	Purine metabolism
+2-Ethylhydracrylic acid	CNC_104	4		HMDB00396	CCC(CO)C(O)=O	
+Betaine	B_1	1	C00719	HMDB00043	C[N+](C)(C)CC([O-])=O	"Glycine, serine and threonine metabolism;ABC transporters"
+Homovanillic acid	H_10	3	C05582	HMDB00118	COC1=CC(CC(O)=O)=CC=C1O	Tyrosine metabolism;Dopaminergic synapse
+L-Methionine	M_6	4	C00073	HMDB00696	CSCC[C@H](N)C(O)=O	Cysteine and methionine metabolism;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;Antifolate resistance;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer
+Isomaltose	CNC_41	1	C00252	HMDB02923	OC[C@H]1O[C@H](OC[C@H]2OC(O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@@H]1O	Starch and sucrose metabolism
+Sucrose	S_3	1	C00089	HMDB00258	OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O	Galactose metabolism;Starch and sucrose metabolism;ABC transporters;Taste transduction;Carbohydrate digestion and absorption
+Phosphocholine	20C_21	1	C00588	HMDB01565	C[N+](C)(C)CCOP(O)(O)=O	Glycerophospholipid metabolism;Choline metabolism in cancer
+L-Aspartic acid	A_10	3	C00049	HMDB00191	N[C@@H](CC(O)=O)C(O)=O	"Arginine biosynthesis;Alanine, aspartate and glutamate metabolism;Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Histidine metabolism;beta-Alanine metabolism;Nicotinate and nicotinamide metabolism;Pantothenate and CoA biosynthesis;Aminoacyl-tRNA biosynthesis;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;Neuroactive ligand-receptor interaction;Protein digestion and absorption;Central carbon metabolism in cancer"
+D-Aspartic acid	A_12	3	C00402	HMDB06483	N[C@H](CC(O)=O)C(O)=O	"Alanine, aspartate and glutamate metabolism"
+Flavin adenine dinucleotide	CNC_11	2	C00016	HMDB01248	CC1=CC2=C(C=C1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC3=C1N=CN=C3N)C1=NC(=O)NC(=O)C1=N2	Riboflavin metabolism;Vitamin digestion and absorption
+Trans-beta-Hydromuconic acid	CNC_146	1		HMDB00393	OC(=O)C\C=C\CC(O)=O	
+Hypotaurine	H_13	1	C00519	HMDB00965	NCCS(O)=O	Taurine and hypotaurine metabolism
+L-Cystine	C_9	2	C00491	HMDB00192	N[C@@H](CSSC[C@H](N)C(O)=O)C(O)=O	Cysteine and methionine metabolism;ABC transporters;Ferroptosis;Protein digestion and absorption
+Acetylcholine	A_6	1	C01996	HMDB00895	CC(=O)OCC[N+](C)(C)C	Glycerophospholipid metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;Synaptic vesicle cycle;Cholinergic synapse;Taste transduction;Regulation of actin cytoskeleton;Insulin secretion;Salivary secretion;Gastric acid secretion;Pancreatic secretion;Bile secretion;Nicotine addiction
+N-Acetyl-D-glucosamine 6-phosphate	CNC_71	3	C00357	HMDB01062	CC(=O)N[C@H]1C(O)O[C@H](COP(O)(O)=O)[C@@H](O)[C@@H]1O	Amino sugar and nucleotide sugar metabolism
+Octanoic acid	Acid_4	4	C06423	HMDB00482	CCCCCCCC(O)=O	Fatty acid biosynthesis;Lipoic acid metabolism
+Adenosine	4C_14	1	C00212	HMDB00050	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O	Purine metabolism;ABC transporters;cGMP-PKG signaling pathway;cAMP signaling pathway;Sphingolipid signaling pathway;Neuroactive ligand-receptor interaction;Vascular smooth muscle contraction;Regulation of lipolysis in adipocytes;Renin secretion;Parkinson disease;Morphine addiction;Alcoholism
+2-Deoxyadenosine	4C_15	1	C00559	HMDB00101	NC1=NC=NC2=C1N=CN2[C@H]1C[C@H](O)[C@@H](CO)O1	Purine metabolism;ABC transporters
+DL-2-Amino-3-phosphonopropionic acid	CNC_172	3	C05672	HMDB00370	NC(CP(O)(O)=O)C(O)=O	Phosphonate and phosphinate metabolism
+Cadaverine	C_12	1	C01672	HMDB02322	NCCCCCN	Lysine degradation;Glutathione metabolism;Protein digestion and absorption
+Adenosine triphosphate	20C_17	2	C00002	HMDB00538	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O	Oxidative phosphorylation;Purine metabolism;Calcium signaling pathway;HIF-1 signaling pathway;Neuroactive ligand-receptor interaction;Lysosome;Necroptosis;Platelet activation;NOD-like receptor signaling pathway;Thermogenesis;Synaptic vesicle cycle;Taste transduction;Inflammatory mediator regulation of TRP channels;Insulin secretion;Prolactin signaling pathway;Renin secretion;Type II diabetes mellitus;Parkinson disease;Shigellosis;Pertussis;Hypertrophic cardiomyopathy (HCM)
+D-Glyceraldehyde 3-phosphate	20C_4	3	C00118	HMDB01112	OC(COP(O)(O)=O)C=O	Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Fructose and mannose metabolism;Galactose metabolism;Inositol phosphate metabolism;Thiamine metabolism;Vitamin B6 metabolism;Terpenoid backbone biosynthesis;Carbon metabolism;Biosynthesis of amino acids
+Dihydroxyacetone phosphate	20C_60	3	 C00111	HMDB01473	OCC(=O)COP(O)(O)=O	Glycolysis / Gluconeogenesis;Pentose and glucuronate interconversions;Fructose and mannose metabolism;Galactose metabolism;Glycerolipid metabolism;Inositol phosphate metabolism;Glycerophospholipid metabolism;Propanoate metabolism;Nicotinate and nicotinamide metabolism;Carbon metabolism;Biosynthesis of amino acids
+Gamma-Aminobutyric acid	A_5	1	C00334	HMDB00112	NCCCC(O)=O	"Alanine, aspartate and glutamate metabolism;Arginine and proline metabolism;beta-Alanine metabolism;Butanoate metabolism;Nicotinate and nicotinamide metabolism;cAMP signaling pathway;Neuroactive ligand-receptor interaction;Synaptic vesicle cycle;Retrograde endocannabinoid signaling;GABAergic synapse;Taste transduction;Estrogen signaling pathway;GnRH secretion;Morphine addiction;Nicotine addiction"
+Deoxyguanosine triphosphate	CNC_85	2	C00286	HMDB01440	NC1=NC2=C(N=CN2[C@H]2C[C@H](O)[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O2)C(=O)N1	Purine metabolism
+Dimethylglycine	D_7	1	C01026	HMDB00092	CN(C)CC(O)=O	"Glycine, serine and threonine metabolism"
+"D-myo-Inositol-1,4,5-triphosphate"	Cay_7	4	C01245	HMDB01498	O[C@@H]1[C@H](O)[C@@H](OP(O)(O)=O)[C@H](OP(O)(O)=O)[C@@H](O)[C@@H]1OP(O)(O)=O	"Inositol phosphate metabolism;MAPK signaling pathway;ErbB signaling pathway;Ras signaling pathway;Calcium signaling pathway;cGMP-PKG signaling pathway;cAMP signaling pathway;Chemokine signaling pathway;NF-kappa B signaling pathway;HIF-1 signaling pathway;Phosphatidylinositol signaling system;Sphingolipid signaling pathway;Phospholipase D signaling pathway;Oocyte meiosis;Adrenergic signaling in cardiomyocytes;Vascular smooth muscle contraction;VEGF signaling pathway;Apelin signaling pathway;Osteoclast differentiation;Gap junction;Platelet activation;NOD-like receptor signaling pathway;C-type lectin receptor signaling pathway;Natural killer cell mediated cytotoxicity;Th1 and Th2 cell differentiation;Th17 cell differentiation;T cell receptor signaling pathway;B cell receptor signaling pathway;Fc epsilon RI signaling pathway;Fc gamma R-mediated phagocytosis;Long-term potentiation;Neurotrophin signaling pathway;Retrograde endocannabinoid signaling;Glutamatergic synapse;Cholinergic synapse;Serotonergic synapse;Dopaminergic synapse;Long-term depression;Taste transduction;Inflammatory mediator regulation of TRP channels;Insulin secretion;GnRH signaling pathway;Estrogen signaling pathway;Melanogenesis;Thyroid hormone synthesis;Thyroid hormone signaling pathway;Oxytocin signaling pathway;Glucagon signaling pathway;Renin secretion;Aldosterone synthesis and secretion;Relaxin signaling pathway;Cortisol synthesis and secretion;Parathyroid hormone synthesis, secretion and action;GnRH secretion;AGE-RAGE signaling pathway in diabetic complications;Cushing syndrome;Growth hormone synthesis, secretion and action;Endocrine and other factor-regulated calcium reabsorption;Salivary secretion;Gastric acid secretion;Pancreatic secretion;Alzheimer disease;Parkinson disease;Huntington disease;Spinocerebellar ataxia;Vibrio cholerae infection;Shigellosis;Yersinia infection;Chagas disease (American trypanosomiasis);African trypanosomiasis;Amoebiasis;Human cytomegalovirus infection;Kaposi sarcoma-associated herpesvirus infection;Epstein-Barr virus infection;Human immunodeficiency virus 1 infection;Pathways in cancer;Glioma;Non-small cell lung cancer;Hepatocellular carcinoma;PD-L1 expression and PD-1 checkpoint pathway in cancer"
+Nicotinamide hypoxanthine dinucleotide	CNC_67	2	C04423		c1cc(c[n+](c1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)n4cnc5c4[nH]cnc5=O)O)O)O)O)C(=O)N	
+Uric acid	U_2	1	C00366	HMDB00289	O=C1NC2=C(N1)C(=O)NC(=O)N2	Purine metabolism;Bile secretion
+Ketoglutaric acid	4C_38	4	C00026	HMDB00208	OC(=O)CCC(=O)C(O)=O	"Citrate cycle (TCA cycle);Pentose and glucuronate interconversions;Ascorbate and aldarate metabolism;Arginine biosynthesis;Alanine, aspartate and glutamate metabolism;Lysine degradation;Histidine metabolism;Taurine and hypotaurine metabolism;D-Glutamine and D-glutamate metabolism;Glyoxylate and dicarboxylate metabolism;Butanoate metabolism;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;HIF-1 signaling pathway;GABAergic synapse;Glucagon signaling pathway;Proximal tubule bicarbonate reclamation;Bile secretion;Central carbon metabolism in cancer"
+L-Saccharopine	CNC_194	3	C00449	HMDB00279	N[C@@H](CCCCN[C@@H](CCC(O)=O)C(O)=O)C(O)=O	Lysine degradation;Biosynthesis of amino acids
+Malonyl coenzyme A	CNC_74	2	C00083	HMDB01175	CC(C)(COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N)C(O)C(=O)NCCC(=O)NCCSC(=O)CC(O)=O	Fatty acid biosynthesis;Fatty acid elongation;beta-Alanine metabolism;Pyruvate metabolism;Propanoate metabolism;Carbon metabolism;Fatty acid metabolism;AMPK signaling pathway;Adipocytokine signaling pathway;Glucagon signaling pathway;Insulin resistance
+N-Acetyl-D-mannosamine	20C_12	1	C00645	HMDB01129	[H][C@@]1(O)O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]1NC(C)=O	Amino sugar and nucleotide sugar metabolism
+Acetoacetate	20C_16	3	C00164	HMDB00060	CC(=O)CC(O)=O	"Synthesis and degradation of ketone bodies;Valine, leucine and isoleucine degradation;Lysine degradation;Tyrosine metabolism;Propanoate metabolism;Butanoate metabolism"
+Adenosine diphosphate	20C_18	2	C00008	HMDB01341	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O	Oxidative phosphorylation;Purine metabolism;FoxO signaling pathway;Neuroactive ligand-receptor interaction;Lysosome;AMPK signaling pathway;Platelet activation;Thermogenesis;Taste transduction;Renin secretion;Parkinson disease
+O-Phosphorylethanolamine	20C_20	1	C00346	HMDB00224	NCCOP(O)(O)=O	Glycerophospholipid metabolism;Sphingolipid metabolism;Sphingolipid signaling pathway
+Phosphocreatine	20C_26	2	C02305	HMDB01511	CN(CC(O)=O)C(=N)NP(O)(O)=O	Arginine and proline metabolism
+L-Carnosine	20C_27	2	C00386	HMDB00033	NCCC(=O)N[C@@H](CC1=CN=CN1)C(O)=O	Histidine metabolism;beta-Alanine metabolism
+"3,5-Diiodo-L-tyrosine"	20C_28	2	C01060	HMDB03474	N[C@@H](CC1=CC(I)=C(O)C(I)=C1)C(O)=O	Tyrosine metabolism;Thyroid hormone synthesis
+3-Iodo-L-tyrosine	20C_29	3	C02515	HMDB00021	N[C@@H](CC1=CC=C(O)C(I)=C1)C(O)=O	Tyrosine metabolism;Thyroid hormone synthesis
+Indole-3-pyruvic acid	20C_30	4	C00331	HMDB60484	OC(=O)C(=O)CC1=CNC2=CC=CC=C12	Tryptophan metabolism
+Pyridoxal 5-phosphate	20C_33	2	C00018	HMDB01491	CC1=NC=C(COP(O)(O)=O)C(C=O)=C1O	Thiamine metabolism;Vitamin B6 metabolism;Vitamin digestion and absorption
+Crotonoyl coenzyme A	20C_42	2	C00877	HMDB02009	C\C=C\C(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C(N)N=CN=C12	Fatty acid degradation;Lysine degradation;Tryptophan metabolism;Glyoxylate and dicarboxylate metabolism;Butanoate metabolism;Carbon metabolism;Fatty acid metabolism
+2-Deoxyribose-5-phosphate	20C_44	4	C00673	HMDB01031	O[C@H]1C[C@H](O)[C@@H](COP(O)(O)=O)O1	Pentose phosphate pathway
+3-Hydroxy-3-methylglutaryl coenzyme A	20C_45	2	C00356	HMDB01375	C[C@](O)(CC(O)=O)CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	"Synthesis and degradation of ketone bodies;Valine, leucine and isoleucine degradation;Butanoate metabolism;Terpenoid backbone biosynthesis;Ferroptosis"
+Isovaleryl coenzyme A	20C_46	2	C02939	HMDB01113	CC(C)CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	"Valine, leucine and isoleucine degradation"
+5-Phospho-D-ribose 1-diphosphate	20C_49	4	C00119	HMDB00280	O[C@H]1[C@@H](O)[C@@H](OP(O)(=O)OP(O)(O)=O)O[C@@H]1COP(O)(O)=O	"Pentose phosphate pathway;Purine metabolism;Pyrimidine metabolism;Histidine metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;Folate biosynthesis;Carbon metabolism;Biosynthesis of amino acids;Antifolate resistance"
+Anserine	20C_58	3	C01262	HMDB00194	CN1C=NC=C1C[C@H](NC(=O)CCN)C(O)=O	Histidine metabolism;beta-Alanine metabolism
+6-Phosphogluconic acid	20C_61	4	 C00345	HMDB01316	O[C@H](COP(O)(O)=O)[C@@H](O)[C@H](O)[C@@H](O)C(O)=O	Pentose phosphate pathway;Carbon metabolism
+D-Tagatose 6-phosphate	20C_67	1	C01097	HMDB06873	OCC1(O)O[C@H](COP(O)(O)=O)[C@H](O)[C@@H]1O	Galactose metabolism
+N-Acetyl-D-glucosamine 1-phosphate	20C_68	4	 C04501	HMDB01367	CC(=O)N[C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)OC1OP(O)(O)=O	Amino sugar and nucleotide sugar metabolism
+NAD	20C_70	2	 C00003	HMDB00902	NC(=O)C1=C[N+](=CC=C1)[C@@H]1O[C@H](COP(O)(=O)OP(O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)N2C=NC3=C2N=CN=C3N)[C@@H](O)[C@H]1O	Oxidative phosphorylation;Thiamine metabolism;Nicotinate and nicotinamide metabolism;Drug metabolism - other enzymes;AMPK signaling pathway;Longevity regulating pathway;Aldosterone synthesis and secretion;Vitamin digestion and absorption
+CDP-ethanolamine	20C_72	3	C00570	HMDB01564	NCCOP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(N)=NC1=O	Glycerophospholipid metabolism
+2-Deoxyadenosine 5-triphosphate	20C_73	2	 C00131	HMDB01532	NC1=NC=NC2=C1N=CN2[C@H]1C[C@H](O)[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O1	Purine metabolism
+Dihydrothymine	20C_78	2	 C00906	HMDB00079	CC1CNC(=O)NC1=O	
+N-Acetyl-L-glutamic acid	4C_18	4	C00624	HMDB01138	CC(=O)NC(CCC(O)=O)C(O)=O	Arginine biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids
+4-Guanidinobutyric acid	4C_20	1	C01035	HMDB03464	NC(N)=NCCCC(O)=O	Arginine and proline metabolism
+DL-4-Hydroxy-3-methoxymandelic acid	4C_23	3	C05584	HMDB00291	COC1=C(O)C=CC(=C1)[C@H](O)C(O)=O	Tyrosine metabolism
+5-Hydroxy-L-tryptophan	4C_27	2	C00643	HMDB15571	N[C@@H](CC1=CNC2=C1C=C(O)C=C2)C(O)=O	Tryptophan metabolism;Serotonergic synapse
+Indole-3-acetic acid	4C_28	1	C00954	HMDB00197	OC(=O)CC1=CNC2=C1C=CC=C2	Tryptophan metabolism
+Glutathione disulfide	4C_29	4	C00127	HMDB03337	NC(CCC(=O)NC(CSSCC(NC(=O)CCC(N)C(O)=O)C(=O)NCC(O)=O)C(=O)NCC(O)=O)C(O)=O	Glutathione metabolism;Ferroptosis;Thyroid hormone synthesis
+Thiamine monophosphate	4C_30	1	C01081	HMDB02666	CC1=C(CCOP(O)([O-])=O)SC=[N+]1CC1=CN=C(C)N=C1N	Thiamine metabolism
+4-Methyl-2-oxovaleric acid	4C_37	3	C00233	HMDB00695	CC(C)CC(=O)C(O)=O	"Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids"
+N-Acetyl-5-hydroxytryptamine	4C_41	4	C00978	HMDB01238	CC(=O)NCCC1=CNC2=C1C=C(O)C=C2	Tryptophan metabolism
+Betaine aldehyde hydrate	4C_42_R_hydrate	1	C07345		C[N+](C)(C)CC(O)O	
+L-Gulonic acid gamma-lactone	4C_7	4	C01040	HMDB03466	[H][C@@]1(OC(=O)[C@@H](O)[C@H]1O)[C@@H](O)CO	Ascorbate and aldarate metabolism
+2-Ketobutyric acid	4C_9	3	C00109	HMDB00005	CCC(=O)C(O)=O	"Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Valine, leucine and isoleucine biosynthesis;Propanoate metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids"
+3-Phosphoadenosine 5-phosphosulfate	70C_1	4	C00053	HMDB01134	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(=O)OS(O)(=O)=O)[C@@H](OP(O)(O)=O)[C@H]1O	Purine metabolism;Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate;Glycosaminoglycan biosynthesis - heparan sulfate / heparin;Sulfur metabolism
+Anthranilate	A_17	1	C00108	HMDB01123	NC1=CC=CC=C1C(O)=O	"Tryptophan metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;Biosynthesis of amino acids"
+2-Amino-3-methoxybenzoic acid	A_18	2	C05831	HMDB60374	COC1=CC=CC(C(O)=O)=C1N	Tryptophan metabolism
+3-Aminoisobutyric acid	A_19	2	C05145	HMDB03911	CC(CN)C(O)=O	
+Phosphatidic Acid	AVL_2	4	C00350		O=P(O)(OC[C@H](OC(=O)CCCCC)COC(=O)CCCCC)O	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis;Glycerophospholipid metabolism;Autophagy - other;Autophagy - animal;Retrograde endocannabinoid signaling;Pathogenic Escherichia coli infection;Kaposi sarcoma-associated herpesvirus infection
+Phosphatidylcholine	AVL_3	3	C00157		O=C(OCC(OC(=O)CC)COP([O-])(=O)OCC[N+](C)(C)C)CC	Glycerophospholipid metabolism;Arachidonic acid metabolism;Linoleic acid metabolism;alpha-Linolenic acid metabolism;Retrograde endocannabinoid signaling;Choline metabolism in cancer
+Phosphatidylethanolamine	AVL_5	4	C00416		CCCCCC(=O)OC[C@H](CO[P@@](=O)(O)OCCN)OC(=O)CCCCC	Glycerolipid metabolism;Glycerophospholipid metabolism;cAMP signaling pathway;Phosphatidylinositol signaling system;Phospholipase D signaling pathway;Fc gamma R-mediated phagocytosis;GnRH signaling pathway;Fat digestion and absorption;Pathways in cancer;Pancreatic cancer;Choline metabolism in cancer
+Phosphatidylglycerol	AVL_8	4			CCCCCC(=O)OC[C@H](COP(=O)([O-])OCC(CO)O)OC(=O)CCCCC	
+"1,3-Diaminopropane"	Base_3	1	C00986	HMDB00002	NCCCN	"Glycine, serine and threonine metabolism;Arginine and proline metabolism;beta-Alanine metabolism"
+Phenethylamine	Base_4	1	C05332	HMDB12275	NCCC1=CC=CC=C1	Phenylalanine metabolism
+L-Cysteic acid	C_10	3	C00506	HMDB02757	NC(CS(O)(=O)=O)C(O)=O	Cysteine and methionine metabolism;Taurine and hypotaurine metabolism;Neuroactive ligand-receptor interaction
+L-Citrulline	C_13	3	C00327	HMDB00904	N[C@@H](CCCNC(N)=O)C(O)=O	Arginine biosynthesis;Biosynthesis of amino acids
+D-Cellobiose	C_2	3	C00185	HMDB00055	OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)[C@H](O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@@H]1O	Starch and sucrose metabolism;ABC transporters
+Choline	C_6	1	C00114	HMDB00097	C[N+](C)(C)CCO	"Glycine, serine and threonine metabolism;Glycerophospholipid metabolism;ABC transporters;Cholinergic synapse;Bile secretion;Choline metabolism in cancer"
+"2,3-Dihydroxypropyl hexopyranoside"	Cay_5	2	C05401	HMDB06790	OCC(O)CO[C@@H]1O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O	Galactose metabolism;Glycerolipid metabolism
+PIP2	Cay_8	4	C04637		CCCCCC(OC[C@H](COP(O[C@@H]1[C@H](O)[C@H](O)[C@@H](OP([O-])(O)=O)[C@H](OP([O])(O)=O)[C@H]1O)([O-])=O)OC(CCCCC)=O)=O	Inositol phosphate metabolism;Phosphatidylinositol signaling system;Phospholipase D signaling pathway;Endocytosis;PI3K-Akt signaling pathway;Focal adhesion;Fc gamma R-mediated phagocytosis;Leukocyte transendothelial migration;Cholinergic synapse;Regulation of actin cytoskeleton;GnRH secretion;Shigellosis;Yersinia infection
+PIP3	Cay_9	4	C05981	HMDB04249	CC(=O)OC(COP(O)(=O)O[C@@H]1[C@H](O)[C@H](OP(O)(O)=O)[C@@H](OP(O)(O)=O)[C@H](OP(O)(O)=O)[C@H]1O)OC(C)=O	Inositol phosphate metabolism;EGFR tyrosine kinase inhibitor resistance;ErbB signaling pathway;Ras signaling pathway;Chemokine signaling pathway;FoxO signaling pathway;Phosphatidylinositol signaling system;Sphingolipid signaling pathway;Phospholipase D signaling pathway;Autophagy - animal;Endocytosis;mTOR signaling pathway;PI3K-Akt signaling pathway;AMPK signaling pathway;Apoptosis;Longevity regulating pathway;Longevity regulating pathway - multiple species;Cellular senescence;VEGF signaling pathway;Focal adhesion;Platelet activation;Natural killer cell mediated cytotoxicity;T cell receptor signaling pathway;B cell receptor signaling pathway;Fc epsilon RI signaling pathway;Fc gamma R-mediated phagocytosis;Neurotrophin signaling pathway;Regulation of actin cytoskeleton;Insulin signaling pathway;Progesterone-mediated oocyte maturation;Prolactin signaling pathway;Thyroid hormone signaling pathway;Relaxin signaling pathway;Insulin resistance;Aldosterone-regulated sodium reabsorption;Carbohydrate digestion and absorption;Alzheimer disease;Shigellosis;Salmonella infection;Yersinia infection;Chagas disease (American trypanosomiasis);Toxoplasmosis;Hepatitis C;Measles;Human cytomegalovirus infection;Influenza A;Human papillomavirus infection;Human T-cell leukemia virus 1 infection;Kaposi sarcoma-associated herpesvirus infection;Herpes simplex virus 1 infection;Epstein-Barr virus infection;Human immunodeficiency virus 1 infection;Pathways in cancer;Colorectal cancer;Pancreatic cancer;Endometrial cancer;Glioma;Prostate cancer;Melanoma;Chronic myeloid leukemia;Acute myeloid leukemia;Small cell lung cancer;Non-small cell lung cancer;Breast cancer;Hepatocellular carcinoma;Gastric cancer;Choline metabolism in cancer;PD-L1 expression and PD-1 checkpoint pathway in cancer
+"N,N-Diacetylchitobiose"	CNC_100	2	C01674	HMDB03556	CC(=O)N[C@H]1[C@H](O)O[C@H](CO)[C@@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(O)=O)[C@@H]1O	Amino sugar and nucleotide sugar metabolism;ABC transporters
+3-Sulfopyruvic acid	CNC_102	3	C05528	HMDB04045	OC(=O)C(=O)CS(O)(=O)=O	Cysteine and methionine metabolism
+2-Methylbutyrylglycine	CNC_106	3		HMDB00339	CCC(C)C(=O)NCC(O)=O	
+2-Hydroxy-3-methylpentanoic acid	CNC_107	3		HMDB00317	CC[C@@H](C)[C@@H](O)C(O)=O	
+N-Hexanoyl-glycine	CNC_110	3		HMDB00701	CCCCCC(=O)NCC(O)=O	
+4-Hydroxyphenylacetylglycine	CNC_111	3	C05596	HMDB00735	OC(=O)CNC(=O)CC1=CC=C(O)C=C1	Tyrosine metabolism
+L-a-Aspartyl-L-phenylalanine	CNC_112	3		HMDB00706	N[C@@H](CC(O)=O)C(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O	
+Isovaleric acid	CNC_115	3	C08262	HMDB00718	CC(C)CC(O)=O	Protein digestion and absorption
+Isovalerylglycine	CNC_117	3		HMDB00678	CC(C)CC(=O)NCC(O)=O	
+Leucinic acid	CNC_118	3	C03264	HMDB00624	CC(C)C[C@@H](O)C(O)=O	
+3-Aminopiperidin-2-one	CNC_119	1		HMDB00323	NC1CCCNC1=O	
+2-Methylglutaric acid	CNC_122	3		HMDB00422	CC(CCC(O)=O)C(O)=O	
+D-Leucic acid	CNC_123	3		HMDB00665	CC(C)CC(O)C(O)=O	
+Hippuric acid	CNC_132	1	C01586	HMDB00714	OC(=O)CNC(=O)C1=CC=CC=C1	Phenylalanine metabolism
+CDP-Glycerol	CNC_135	3	C00513	HMDB59599	OCC(O)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=CC(=N)N=C1O	Glycerophospholipid metabolism
+Nicotinamide ribotide	CNC_14	2	C00455	HMDB00229	NC(=O)C1=CC=C[N+](=C1)[C@@H]1O[C@H](COP(O)([O-])=O)[C@@H](O)[C@H]1O	Nicotinate and nicotinamide metabolism
+3-Methylglutaconic acid	CNC_140	2		HMDB00522	C\C(CC(O)=O)=C/C(O)=O	
+Diadenosine triphosphate	CNC_141	3	C06197	HMDB01155	NC1=C2N=CN([C@H]3O[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(=O)OC[C@H]4O[C@H]([C@H](O)[C@@H]4O)N4C=NC5=C(N)N=CN=C45)[C@H](O)[C@@H]3O)C2=NC=N1	Purine metabolism
+(R)-3-Hydroxybutyric acid	CNC_153	2	C01089	HMDB00011	C[C@@H](O)CC(O)=O	Synthesis and degradation of ketone bodies;Butanoate metabolism;cAMP signaling pathway
+N-2-Furoylglycine	CNC_154	1		HMDB00439	OC(=O)CNC(=O)C1=CC=CO1	
+Glycerol 3-phosphate	CNC_158	3	C00093	HMDB00126	OC[C@@H](O)COP(O)(O)=O	Glycerolipid metabolism;Glycerophospholipid metabolism;ABC transporters;Choline metabolism in cancer
+3-Methoxytyramine	CNC_16	1	C05587	HMDB00022	COC1=C(O)C=CC(CCN)=C1	Tyrosine metabolism;Dopaminergic synapse
+N6-Acetyl-lysine	CNC_164	3	C02727	HMDB00206	CC(=O)NCCCC[C@H](N)C(O)=O	Lysine degradation
+N2-Acetyl-L-lysine	CNC_167	3	C12989	HMDB00446	CC(=O)NC(CCCCN)C(O)=O	
+L-Alloisoleucine	CNC_171	1		HMDB00557	CC[C@@H](C)[C@H](N)C(O)=O	
+DL-Homocystine	CNC_178	1	C01817	HMDB00575	NC(CCSSCCC(N)C(O)=O)C(O)=O	Cysteine and methionine metabolism
+Dephosphocoenzyme A	CNC_18	4	C00882	HMDB01373	CC(C)(COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC2=C1N=CN=C2N)C(O)C(=O)NCCC(=O)NCCS	Pantothenate and CoA biosynthesis
+Porphobilinogen	CNC_184	3	C00931	HMDB00245	NCC1=C(CC(O)=O)C(CCC(O)=O)=CN1	Porphyrin and chlorophyll metabolism
+DL-Homocysteine	CNC_196	3	C00155	HMDB00742	NC(CCS)C(O)=O	Cysteine and methionine metabolism;Sulfur metabolism;Biosynthesis of amino acids;Antifolate resistance;NOD-like receptor signaling pathway
+Uridine 5-diphosphate	CNC_25	4	C00015	HMDB00295	O[C@H]1[C@@H](O)[C@@H](O[C@@H]1COP(O)(=O)OP(O)(O)=O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;Neuroactive ligand-receptor interaction
+Adenosine 5-phosphosulfate	CNC_26_R	3	C00224	HMDB01003	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@H](COP(O)(=O)OS(O)(=O)=O)[C@@H](O)[C@H]1O	Purine metabolism;Sulfur metabolism
+N-Glycolylneuraminic acid	CNC_34	3	C03410	HMDB00833	OC[C@@H](O)[C@@H](O)[C@@H]1O[C@@](O)(C[C@H](O)[C@H]1NC(=O)CO)C(O)=O	Amino sugar and nucleotide sugar metabolism
+L-Pipecolic acid	CNC_36	1	C00408	HMDB00070	OC(=O)C1CCCCN1	Lysine degradation
+3-Methyl-2-oxovaleric acid	CNC_37	3	C03465	HMDB00491	CCC(C)C(=O)C(O)=O	
+Dimethylaminopurine	CNC_43	1		HMDB00473	CN(C)C1=NC=NC2=C1NC=N2	
+Uridine 5-diphosphoglucose	CNC_46	3	C00029	HMDB00286	OC[C@@H]1OC(OP(O)(=O)OP(O)(=O)OC[C@@H]2O[C@@H]([C@@H](O)[C@H]2O)N2C=CC(=O)NC2=O)[C@@H](O)[C@H](O)[C@H]1O	"Pentose and glucuronate interconversions;Galactose metabolism;Ascorbate and aldarate metabolism;Pyrimidine metabolism;Starch and sucrose metabolism;Amino sugar and nucleotide sugar metabolism;Neomycin, kanamycin and gentamicin biosynthesis;Glycerolipid metabolism"
+Biocytin	CNC_48	3	C05552	HMDB03134	[H][C@]12CS[C@@H](CCCCC(=O)NCCCC[C@H](N)C(O)=O)[C@@]1([H])NC(=O)N2	Biotin metabolism;Vitamin digestion and absorption
+Uridine 5-triphosphate	CNC_49	2	C00075	HMDB00285	O[C@H]1[C@@H](O)[C@@H](O[C@@H]1COP(O)(=O)OP(O)(=O)OP(O)(O)=O)N1C=CC(=O)NC1=O	Pyrimidine metabolism;Neuroactive ligand-receptor interaction
+Guanosine 5-triphosphate	CNC_50	4	C00044	HMDB01273	NC1=NC2=C(N=CN2[C@@H]2O[C@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N1	Purine metabolism;Riboflavin metabolism;Folate biosynthesis;RNA transport;Ras signaling pathway;Rap1 signaling pathway;Sulfur relay system;Autophagy - animal;Endocytosis
+"4,6-Dioxoheptanoic acid"	CNC_56	3		HMDB00635	CC(=O)CC(=O)CCC(O)=O	
+N-Acetylneuraminic acid	CNC_57	3	C00270	HMDB00230	CC(=O)N[C@@H]1[C@@H](O)C[C@](O)(O[C@H]1[C@H](O)[C@H](O)CO)C(O)=O	Amino sugar and nucleotide sugar metabolism
+Uridine 5-diphosphogalactose	CNC_58	3	C00052	HMDB00302	OC[C@H]1O[C@H](O[P@@](O)(=O)O[P@@](O)(=O)OC[C@H]2O[C@H]([C@H](O)[C@@H]2O)N2C=CC(=O)NC2=O)[C@H](O)[C@@H](O)[C@H]1O	Galactose metabolism;Amino sugar and nucleotide sugar metabolism
+Cyclic AMP	CNC_59	3	C00575	HMDB00058	NC1=NC=NC2=C1N=CN2[C@@H]1O[C@@H]2COP(O)(=O)O[C@H]2[C@H]1O	"Purine metabolism;Endocrine resistance;MAPK signaling pathway;Ras signaling pathway;Rap1 signaling pathway;Calcium signaling pathway;cGMP-PKG signaling pathway;cAMP signaling pathway;Chemokine signaling pathway;Phospholipase D signaling pathway;Oocyte meiosis;Longevity regulating pathway;Longevity regulating pathway - multiple species;Adrenergic signaling in cardiomyocytes;Vascular smooth muscle contraction;Hedgehog signaling pathway;Apelin signaling pathway;Gap junction;Platelet activation;Leukocyte transendothelial migration;Circadian rhythm;Circadian entrainment;Thermogenesis;Long-term potentiation;Retrograde endocannabinoid signaling;Glutamatergic synapse;Cholinergic synapse;Serotonergic synapse;GABAergic synapse;Dopaminergic synapse;Olfactory transduction;Taste transduction;Inflammatory mediator regulation of TRP channels;Insulin signaling pathway;Insulin secretion;GnRH signaling pathway;Ovarian steroidogenesis;Progesterone-mediated oocyte maturation;Estrogen signaling pathway;Melanogenesis;Thyroid hormone synthesis;Thyroid hormone signaling pathway;Oxytocin signaling pathway;Glucagon signaling pathway;Regulation of lipolysis in adipocytes;Renin secretion;Aldosterone synthesis and secretion;Relaxin signaling pathway;Cortisol synthesis and secretion;Parathyroid hormone synthesis, secretion and action;Cushing syndrome;Growth hormone synthesis, secretion and action;Aldosterone-regulated sodium reabsorption;Endocrine and other factor-regulated calcium reabsorption;Vasopressin-regulated water reabsorption;Salivary secretion;Gastric acid secretion;Pancreatic secretion;Bile secretion;Parkinson disease;Prion diseases;Cocaine addiction;Amphetamine addiction;Morphine addiction;Alcoholism;Vibrio cholerae infection;Pertussis;Chagas disease (American trypanosomiasis);Amoebiasis;Human papillomavirus infection;Human T-cell leukemia virus 1 infection;Pathways in cancer;Dilated cardiomyopathy (DCM)"
+3-Methylglutaric acid	CNC_6	3		HMDB00752	CC(CC(O)=O)CC(O)=O	
+3-Hydroxybutyryl coenzyme A	CNC_63	4	C01144	HMDB01166	C[C@@H](O)CC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	Fatty acid degradation;Lysine degradation;Tryptophan metabolism;Butanoate metabolism;Carbon metabolism;Fatty acid metabolism
+L-2-Aminobutyric acid	CNC_7	2	C02356	HMDB00452	CC[C@H](N)C(O)=O	Cysteine and methionine metabolism
+"DL-3,4-Dihydroxyphenyl glycol"	CNC_75	3	C05576	HMDB00318	OCC(O)C1=CC(O)=C(O)C=C1	Tyrosine metabolism
+Deoxyguanosine 5-diphosphate	CNC_76	2	C00361	HMDB00960	NC1=NC2=C(N=CN2[C@H]2C[C@H](O)[C@@H](COP(O)(=O)OP(O)(O)=O)O2)C(=O)N1	Purine metabolism
+Octanoyl coenzyme A	CNC_78	2	C01944	HMDB01070	CCCCCCCC(=O)SCCNC(=O)CCNC(=O)C(O)C(C)(C)COP(O)(=O)OP(O)(=O)OCC1OC(C(O)C1OP(O)(O)=O)N1C=NC2=C(N)N=CN=C12	Fatty acid elongation;Fatty acid degradation;Lipoic acid metabolism;Fatty acid metabolism
+3-Hydroxy-3-methylglutaric acid	CNC_80	4	C03761	HMDB00355	CC(O)(CC(O)=O)CC(O)=O	
+(4R)-4-Hydroxy-L-glutamic acid	CNC_81	2	C05947	HMDB02273	NC(CC(O)C(O)=O)C(O)=O	Arginine and proline metabolism
+Gamma-Glu-Cys	CNC_82	4	C00669	HMDB01049	N[C@@H](CCC(=O)N[C@@H](CS)C(O)=O)C(O)=O	Glutathione metabolism;Ferroptosis
+Acetyl coenzyme A	CNC_84	2	C00024	HMDB01206	CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N	"Glycolysis / Gluconeogenesis;Citrate cycle (TCA cycle);Fatty acid biosynthesis;Fatty acid elongation;Fatty acid degradation;Synthesis and degradation of ketone bodies;Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;Lysine degradation;Phenylalanine metabolism;Tryptophan metabolism;beta-Alanine metabolism;Taurine and hypotaurine metabolism;Glutathione metabolism;Inositol phosphate metabolism;Pyruvate metabolism;Glyoxylate and dicarboxylate metabolism;Propanoate metabolism;Butanoate metabolism;Terpenoid backbone biosynthesis;Carbon metabolism;Fatty acid metabolism;HIF-1 signaling pathway;AMPK signaling pathway;Ferroptosis;Thermogenesis;Cholinergic synapse;Glucagon signaling pathway;Insulin resistance;Bile secretion;Central carbon metabolism in cancer"
+Guanosine 5-diphosphate	CNC_88	4	C00035	HMDB01201	NC1=NC2=C(N=CN2[C@@H]2O[C@H](COP(O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N1	Purine metabolism;RNA transport;Ras signaling pathway;Rap1 signaling pathway;Autophagy - animal;Endocytosis
+Thymidine 5-triphosphate	CNC_89	4	C00459	HMDB01342	CC1=CN([C@H]2C[C@H](O)[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O2)C(=O)NC1=O	Pyrimidine metabolism
+"2,3-Diphosphoglyceric acid"	CNC_94	4	C01159	HMDB01294	OC(=O)[C@@H](COP(O)(O)=O)OP(O)(O)=O	Glycolysis / Gluconeogenesis
+Coenzyme A	CNC_97	4	C00010	HMDB01423	CC(C)(COP(O)(=O)OP(O)(=O)OC[C@H]1O[C@H]([C@H](O)[C@@H]1OP(O)(O)=O)N1C=NC2=C1N=CN=C2N)C(O)C(=O)NCCC(=O)NCCS	Fatty acid degradation;Pantothenate and CoA biosynthesis;Ferroptosis;Thermogenesis;Cholinergic synapse;Fat digestion and absorption;Vitamin digestion and absorption
+Deoxycytidine triphosphate	CNC_99	4	C00458	HMDB00998	NC1=NC(=O)N(C=C1)[C@H]1C[C@H](O)[C@@H](COP(O)(=O)OP(O)(=O)OP(O)(O)=O)O1	Pyrimidine metabolism
+2-Deoxy-D-ribose	D_1	2	C01801	HMDB03224	OC[C@@H]1O[C@H](O)C[C@H]1O	Pentose phosphate pathway
+"2,5-Dihydroxybenzaldehyde"	D_11	3	C05585	HMDB04062	OC1=CC(C=O)=C(O)C=C1	Tyrosine metabolism
+L-Dihydroorotic acid	D_12	3	C00337	HMDB00528	OC(=O)C1CC(=O)NC(=O)N1	Pyrimidine metabolism
+"DL-3,4-Dihydroxymandelic acid"	D_13	3	C05580	HMDB01866	OC(C(O)=O)C1=CC=C(O)C(O)=C1	Tyrosine metabolism
+Dulcitol	D_2	1	C01697	HMDB00107	OC[C@H](O)[C@@H](O)[C@@H](O)[C@H](O)CO	Galactose metabolism
+Decanoic acid	D_4	4	C01571	HMDB00511	CCCCCCCCCC(O)=O	Fatty acid biosynthesis
+Dihydrouracil	D_5	1	C00429	HMDB00076	O=C1CCNC(=O)N1	Pyrimidine metabolism;beta-Alanine metabolism;Pantothenate and CoA biosynthesis
+Folic acid	F_5	4	C00504	HMDB00121	NC1=NC(=O)C2=NC(CNC3=CC=C(C=C3)C(=O)N[C@@H](CCC(O)=O)C(O)=O)=CN=C2N1	One carbon pool by folate;Folate biosynthesis;Antifolate resistance;Bile secretion;Vitamin digestion and absorption
+D-Glucose	G_1	2	C00031	HMDB00122	OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O	"Glycolysis / Gluconeogenesis;Pentose phosphate pathway;Galactose metabolism;Starch and sucrose metabolism;Amino sugar and nucleotide sugar metabolism;Neomycin, kanamycin and gentamicin biosynthesis;ABC transporters;HIF-1 signaling pathway;FoxO signaling pathway;AMPK signaling pathway;Taste transduction;Insulin signaling pathway;Insulin secretion;Prolactin signaling pathway;Glucagon signaling pathway;Type II diabetes mellitus;Insulin resistance;Non-alcoholic fatty liver disease (NAFLD);AGE-RAGE signaling pathway in diabetic complications;Carbohydrate digestion and absorption;Bile secretion;Mineral absorption;Central carbon metabolism in cancer"
+L-Glutamic acid	G_12	1	C00025	HMDB00148	N[C@@H](CCC(O)=O)C(O)=O	"Arginine biosynthesis;Alanine, aspartate and glutamate metabolism;Arginine and proline metabolism;Histidine metabolism;Taurine and hypotaurine metabolism;D-Glutamine and D-glutamate metabolism;Glutathione metabolism;Neomycin, kanamycin and gentamicin biosynthesis;Glyoxylate and dicarboxylate metabolism;Butanoate metabolism;Porphyrin and chlorophyll metabolism;Nitrogen metabolism;Aminoacyl-tRNA biosynthesis;Carbon metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;FoxO signaling pathway;Phospholipase D signaling pathway;Neuroactive ligand-receptor interaction;Ferroptosis;Gap junction;Circadian entrainment;Long-term potentiation;Synaptic vesicle cycle;Retrograde endocannabinoid signaling;Glutamatergic synapse;GABAergic synapse;Long-term depression;Taste transduction;Proximal tubule bicarbonate reclamation;Protein digestion and absorption;Amyotrophic lateral sclerosis (ALS);Huntington disease;Spinocerebellar ataxia;Cocaine addiction;Amphetamine addiction;Nicotine addiction;Alcoholism;Central carbon metabolism in cancer"
+Choline glycerophosphate	G_23	2	C00670	HMDB00086	C[N+](C)(C)CCOP([O-])(=O)OC[C@@H](O)CO	Glycerophospholipid metabolism;Ether lipid metabolism;Choline metabolism in cancer
+Glucono delta-lactone	G_4	1	C00198	HMDB00150	OC[C@H]1OC(=O)[C@H](O)[C@@H](O)[C@@H]1O	Pentose phosphate pathway;Carbon metabolism
+4-Hydroxybenzoic acid	H_11	3	C00156	HMDB00500	OC(=O)C1=CC=C(O)C=C1	Ubiquinone and other terpenoid-quinone biosynthesis;Folate biosynthesis
+2-Hydroxyphenylacetic acid	H_12	3	C05852	HMDB00669	OC(=O)CC1=CC=CC=C1O	Phenylalanine metabolism
+Hypoxanthine	H_2	2	C00262	HMDB00157	OC1=NC=NC2=C1NC=N2	Purine metabolism
+L-Histidine	H_6	1	C00135	HMDB00177	N[C@@H](CC1=CNC=N1)C(O)=O	Histidine metabolism;beta-Alanine metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Central carbon metabolism in cancer
+4-Hydroxyphenylacetic acid	H_8	3	C00642	HMDB00020	OC(=O)CC1=CC=C(O)C=C1	Tyrosine metabolism;Phenylalanine metabolism
+4-Hydroxyphenylpyruvic acid	H_9	3	C01179	HMDB00707	OC(=O)C(=O)CC1=CC=C(O)C=C1	"Ubiquinone and other terpenoid-quinone biosynthesis;Tyrosine metabolism;Phenylalanine, tyrosine and tryptophan biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids"
+Inosine 5-monophosphate	I_3	2	C00130	HMDB00175	O[C@@H]1[C@@H](COP(O)(O)=O)O[C@H]([C@@H]1O)N1C=NC2=C1N=CNC2=O	Purine metabolism;Antifolate resistance;Taste transduction
+L-Isoleucine	I_5	1	C00407	HMDB00172	CC[C@H](C)[C@H](N)C(O)=O	"Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Mineral absorption;Shigellosis;Central carbon metabolism in cancer"
+4-Imidazoleacrylic acid	I_6	1	C00785	HMDB00301	OC(=O)\C=C\C1=CNC=N1	Histidine metabolism
+L-Leucine	L_2	1	C00123	HMDB00687	CC(C)C[C@H](N)C(O)=O	"Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;mTOR signaling pathway;Protein digestion and absorption;Mineral absorption;Shigellosis;Central carbon metabolism in cancer"
+D-Mannose	M_2	2	C00159	HMDB00169	OC[C@H]1OC(O)[C@@H](O)[C@@H](O)[C@@H]1O	Fructose and mannose metabolism;Galactose metabolism;Amino sugar and nucleotide sugar metabolism;ABC transporters;Lysosome;C-type lectin receptor signaling pathway
+5-Methoxytryptamine	M_7	1	C05659	HMDB04095	COC1=CC2=C(NC=C2CCN)C=C1	Tryptophan metabolism
+5-Methoxy-3-indoleacetic acid	M_8	1	C05660	HMDB04096	COC1=CC2=C(NC=C2CC(O)=O)C=C1	Tryptophan metabolism
+Nicotinamide	N_1	1	C00153	HMDB01406	NC(=O)C1=CN=CC=C1	Nicotinate and nicotinamide metabolism;Vitamin digestion and absorption
+Nicotinic acid	N_2	1	C00253	HMDB01488	OC(=O)C1=CN=CC=C1	Nicotinate and nicotinamide metabolism;Pertussis
+L-Ornithine	O_2	2	C00077	HMDB00214	NCCC[C@H](N)C(O)=O	Arginine biosynthesis;Arginine and proline metabolism;D-Arginine and D-ornithine metabolism;Glutathione metabolism;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters
+Pyridoxal	P_10	1	C00250	HMDB01545	CC1=C(O)C(C=O)=C(CO)C=N1	Vitamin B6 metabolism;Vitamin digestion and absorption
+L-Proline	P_4	1	C00148	HMDB00162	OC(=O)[C@@H]1CCCN1	Arginine and proline metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer
+D-Proline	P_5	1	C00763	HMDB03411	OC(=O)[C@H]1CCCN1	Arginine and proline metabolism
+Stachyose	S_4	3	C01613	HMDB03553	OC[C@H]1O[C@@](CO)(O[C@H]2O[C@H](CO[C@H]3O[C@H](CO[C@H]4O[C@H](CO)[C@H](O)[C@H](O)[C@H]4O)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O	Galactose metabolism
+L-Serine	S_6	3	C00065	HMDB00187	N[C@@H](CO)C(O)=O	"Glycine, serine and threonine metabolism;Cysteine and methionine metabolism;Sphingolipid metabolism;Glyoxylate and dicarboxylate metabolism;Sulfur metabolism;Aminoacyl-tRNA biosynthesis;Carbon metabolism;Biosynthesis of amino acids;ABC transporters;Sphingolipid signaling pathway;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+D-Serine	S_7	3	C00740	HMDB03406	N[C@H](CO)C(O)=O	"Glycine, serine and threonine metabolism;Taste transduction"
+Sarcosine	S_9	2	C00213	HMDB00271	CNCC(O)=O	"Glycine, serine and threonine metabolism;Arginine and proline metabolism"
+Taurine	T_2	1	C00245	HMDB00251	NCCS(O)(=O)=O	Primary bile acid biosynthesis;Taurine and hypotaurine metabolism;Sulfur metabolism;ABC transporters;Neuroactive ligand-receptor interaction
+Thymine	T_4	2	C00178	HMDB00262	CC1=CNC(=O)NC1=O	Pyrimidine metabolism
+L-Threonine	T_7	3	C00188	HMDB00167	C[C@@H](O)[C@H](N)C(O)=O	"Glycine, serine and threonine metabolism;Valine, leucine and isoleucine biosynthesis;Porphyrin and chlorophyll metabolism;Aminoacyl-tRNA biosynthesis;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Mineral absorption"
+Tyramine	T_9	1	C00483	HMDB00306	NCCC1=CC=C(O)C=C1	Tyrosine metabolism;Neuroactive ligand-receptor interaction;Protein digestion and absorption
+Urea	U_1	2	C00086	HMDB00294	NC(N)=O	Arginine biosynthesis;Purine metabolism;Pyrimidine metabolism;Arginine and proline metabolism;Biotin metabolism;ABC transporters;Epithelial cell signaling in Helicobacter pylori infection
+Uridine monophosphate	U_3	3	C00105	HMDB00288	O[C@H]1[C@@H](O)[C@@H](O[C@@H]1COP(O)(O)=O)N1C=CC(=O)NC1=O	Pyrimidine metabolism
+Uracil	U_4	2	C00106	HMDB00300	O=C1NC=CC(=O)N1	Pyrimidine metabolism;beta-Alanine metabolism;Pantothenate and CoA biosynthesis
+L-Valine	V_1	3	C00183	HMDB00883	CC(C)[C@H](N)C(O)=O	"Valine, leucine and isoleucine degradation;Valine, leucine and isoleucine biosynthesis;Pantothenate and CoA biosynthesis;Aminoacyl-tRNA biosynthesis;2-Oxocarboxylic acid metabolism;Biosynthesis of amino acids;ABC transporters;Protein digestion and absorption;Mineral absorption;Central carbon metabolism in cancer"
+D-Xylitol	X_2	2	C00379	HMDB02917	OC[C@H](O)C(O)[C@H](O)CO	Pentose and glucuronate interconversions;ABC transporters
+Xanthosine	X_4	3	C01762	HMDB00299	OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)N1C=NC2=C1N=C(O)N=C2O	Purine metabolism;Caffeine metabolism;ABC transporters
