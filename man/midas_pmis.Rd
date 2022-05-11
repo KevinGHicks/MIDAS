@@ -5,7 +5,7 @@
 \alias{midas_pmis}
 \title{MIDAS PMIs}
 \format{
-A tibble with 52,614 rows and 8 columns:
+A tibble with 52,614 rows and 6 columns:
 \describe{
   \item{metabolite}{Metabolite name (indistinguishable metabolites are lumped)}
   \item{query_protein}{Protein name. Anonymous proteins are named MIDASXXXX.}
