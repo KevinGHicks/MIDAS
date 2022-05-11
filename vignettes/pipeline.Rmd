@@ -259,6 +259,8 @@ enrichment_statistics %>%
 midas_pmis = enrichment_statistics %>%
   select(-met_data, -met_mean, -met_sd)
 
+stopifnot(nrow(midas_pmis %>% anti_join(midas::metabolites, by = "metabolite")) == 0)
+
 # save to packages with:
 # this data can be accessed with data(midas_pmis)
 # usethis::use_data(midas_pmis, overwrite = TRUE)
